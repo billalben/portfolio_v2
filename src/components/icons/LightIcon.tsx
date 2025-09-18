@@ -2,26 +2,10 @@ import React, { SVGProps } from "react";
 
 export function LightIcon(props: SVGProps<SVGSVGElement>) {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="1em"
-      height="1em"
-      viewBox="0 0 24 24"
-      {...props}
-    >
+    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" {...props}>
       {/* Icon from Material Line Icons by Vjacheslav Trushkin - https://github.com/cyberalien/line-md/blob/master/license.txt */}
-      <g
-        fill="none"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="2"
-      >
-        <path
-          strokeDasharray="2"
-          strokeDashoffset="2"
-          d="M12 19v1M19 12h1M12 5v-1M5 12h-1"
-        >
+      <g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2">
+        <path strokeDasharray="2" strokeDashoffset="2" d="M12 19v1M19 12h1M12 5v-1M5 12h-1">
           <animate
             fill="freeze"
             attributeName="d"
@@ -29,19 +13,9 @@ export function LightIcon(props: SVGProps<SVGSVGElement>) {
             dur="0.2s"
             values="M12 19v1M19 12h1M12 5v-1M5 12h-1;M12 21v1M21 12h1M12 3v-1M3 12h-1"
           />
-          <animate
-            fill="freeze"
-            attributeName="stroke-dashoffset"
-            begin="0.6s"
-            dur="0.2s"
-            values="2;0"
-          />
+          <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="2;0" />
         </path>
-        <path
-          strokeDasharray="2"
-          strokeDashoffset="2"
-          d="M17 17l0.5 0.5M17 7l0.5 -0.5M7 7l-0.5 -0.5M7 17l-0.5 0.5"
-        >
+        <path strokeDasharray="2" strokeDashoffset="2" d="M17 17l0.5 0.5M17 7l0.5 -0.5M7 7l-0.5 -0.5M7 17l-0.5 0.5">
           <animate
             fill="freeze"
             attributeName="d"
@@ -49,21 +23,9 @@ export function LightIcon(props: SVGProps<SVGSVGElement>) {
             dur="0.2s"
             values="M17 17l0.5 0.5M17 7l0.5 -0.5M7 7l-0.5 -0.5M7 17l-0.5 0.5;M18.5 18.5l0.5 0.5M18.5 5.5l0.5 -0.5M5.5 5.5l-0.5 -0.5M5.5 18.5l-0.5 0.5"
           />
-          <animate
-            fill="freeze"
-            attributeName="stroke-dashoffset"
-            begin="0.8s"
-            dur="0.2s"
-            values="2;0"
-          />
+          <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.8s" dur="0.2s" values="2;0" />
         </path>
-        <animateTransform
-          attributeName="transform"
-          dur="30s"
-          repeatCount="indefinite"
-          type="rotate"
-          values="0 12 12;360 12 12"
-        />
+        <animateTransform attributeName="transform" dur="30s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12" />
       </g>
       <mask id="SVGu6kfobeu">
         <circle cx="12" cy="12" r="12" fill="#fff" />
@@ -78,13 +40,7 @@ export function LightIcon(props: SVGProps<SVGSVGElement>) {
           <animate fill="freeze" attributeName="r" dur="0.4s" values="10;1" />
         </circle>
       </mask>
-      <circle
-        cx="12"
-        cy="12"
-        r="10"
-        mask="url(#SVGu6kfobeu)"
-        fill="currentColor"
-      >
+      <circle cx="12" cy="12" r="10" mask="url(#SVGu6kfobeu)" fill="currentColor">
         <animate fill="freeze" attributeName="r" dur="0.4s" values="10;6" />
       </circle>
     </svg>

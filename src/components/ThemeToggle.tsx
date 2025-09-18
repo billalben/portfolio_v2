@@ -1,10 +1,11 @@
 "use client";
 
 import { useState } from "react";
+
 import DarkIcon from "./icons/DarkIcon";
 import LightIcon from "./icons/LightIcon";
 
-export default function ThemeToggle() {
+const ThemeToggle = () => {
   const [theme, setTheme] = useState<"light" | "dark">("dark");
 
   // Toggle handler
@@ -25,4 +26,6 @@ export default function ThemeToggle() {
       {theme === "light" ? <DarkIcon /> : <LightIcon />}
     </button>
   );
-}
+};
+
+export default ThemeToggle;

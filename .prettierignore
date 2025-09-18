@@ -1,0 +1,13 @@
+node_modules
+dist
+build
+coverage
+*.svg
+*.png
+*.md
+*.json
+*.lock
+*.yml
+*.yaml
+*.txt
+*.log

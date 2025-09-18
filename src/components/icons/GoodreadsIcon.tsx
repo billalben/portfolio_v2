@@ -2,13 +2,7 @@ import React, { SVGProps } from "react";
 
 export function GoodreadsIcon(props: SVGProps<SVGSVGElement>) {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="0.88em"
-      height="1em"
-      viewBox="0 0 448 512"
-      {...props}
-    >
+    <svg xmlns="http://www.w3.org/2000/svg" width="0.88em" height="1em" viewBox="0 0 448 512" {...props}>
       {/* Icon from Font Awesome Brands by Dave Gandy - https://creativecommons.org/licenses/by/4.0/ */}
       <path
         fill="currentColor"
