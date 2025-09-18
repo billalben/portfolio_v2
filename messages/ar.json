@@ -1,0 +1,20 @@
+{
+  "HomePage": {
+    "title": "مرحبا بالعالم!"
+  },
+  "LocaleSwitcher": {
+    "label": "تغيير اللغة",
+
+    "locale": "{locale, select, fr {🇫🇷  فرنسي} en {🇬🇧  إنجليزي} ar {🇸🇦  عربي} other {آخر}}"
+  },
+  "Projects": {
+    "project1": {
+      "name": "المشروع الأول",
+      "description": "هذا مشروع عن X"
+    },
+    "project2": {
+      "name": " المشروع الثاني",
+      "description": "هذا مشروع عن Y"
+    }
+  }
+}

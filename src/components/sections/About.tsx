@@ -1,5 +1,9 @@
 const About = () => {
-  return <div className="h-screen">Hello from About Section</div>;
+  return (
+    <section id="about" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
+      Hello from About Section
+    </section>
+  );
 };
 
 export default About;

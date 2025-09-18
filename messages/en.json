@@ -1,0 +1,20 @@
+{
+  "HomePage": {
+    "title": "Hello world!"
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    
+    "locale": "{locale, select, fr {🇫🇷  French} en {🇬🇧  English} ar {🇸🇦  Arabic} other {Other}}"
+  },
+  "Projects": {
+    "project1": {
+      "name": "Project One",
+      "description": "This is a project about X"
+    },
+    "project2": {
+      "name": "Project Two",
+      "description": "This is a project about Y"
+    }
+  }
+}

@@ -44,7 +44,7 @@ const BackgroundGlow = () => {
           if (glowRef.current) {
             glowRef.current.style.background = `radial-gradient(
               600px at ${position.current.x}px ${position.current.y}px,
-              ${theme === "dark" ? "rgb(15 23 42/0.15)" : "rgba(99,102,241,0.15)"},
+              ${theme === "dark" ? "rgba(99,102,241,0.20)" : "rgba(56,189,248,0.20)"},
               transparent 80%
             )`;
           }

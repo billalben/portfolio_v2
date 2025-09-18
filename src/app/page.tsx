@@ -1,20 +1,6 @@
-import About from "@/components/sections/About";
-import Footer from "@/components/sections/Footer";
-import Header from "@/components/sections/Header";
-import Projects from "@/components/sections/Projects";
-import Skills from "@/components/sections/Skills";
+import { redirect } from "next/navigation";
 
-export default function HomePage() {
-  return (
-    <div className="lg:flex lg:justify-between lg:gap-4">
-      <Header />
-
-      <main className="mt-12 space-y-20 lg:mt-0 lg:w-[52%] lg:space-y-24">
-        <About />
-        <Projects />
-        <Skills />
-        <Footer />
-      </main>
-    </div>
-  );
+// This page only renders when the app is built statically (output: 'export')
+export default function RootPage() {
+  redirect("/en");
 }

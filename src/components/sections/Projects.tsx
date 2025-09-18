@@ -1,37 +1,38 @@
+import { useTranslations } from "next-intl";
+
 import ProjectCard from "../ProjectCard";
 
 const Projects = () => {
   const PROJECTS = [
     {
-      id: 1,
-      title: "Project One",
-      description: "This is a brief description of Project One.",
-      imageUrl: "/images/project1.png",
-      projectUrl: "https://example.com/project-one",
-      skills: ["React", "TypeScript", "CSS"],
+      id: "project1",
+      image: "/images/p1.png",
+      url: "https://github.com/you/project1",
+      skills: ["React", "TypeScript", "Next.js"],
     },
     {
-      id: 2,
-      title: "Project Two",
-      description: "This is a brief description of Project Two.",
-      imageUrl: "/images/project2.png",
-      projectUrl: "https://example.com/project-two",
-      skills: ["Next.js", "Tailwind CSS", "GraphQL"],
+      id: "project2",
+      image: "/images/p2.png",
+      url: "https://github.com/you/project2",
+      skills: ["JavaScript", "CSS", "HTML"],
     },
   ];
+
+  const t = useTranslations("Projects");
+
   return (
-    <div>
+    <section id="projects" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
       {PROJECTS.map((project) => (
         <ProjectCard
           key={project.id}
-          title={project.title}
-          description={project.description}
-          image={project.imageUrl}
-          link={project.projectUrl}
+          title={t(`${project.id}.name`)}
+          description={t(`${project.id}.description`)}
+          image={project.image}
+          link={project.url}
           skills={project.skills}
         />
       ))}
-    </div>
+    </section>
   );
 };
 
