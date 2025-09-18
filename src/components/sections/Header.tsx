@@ -1,5 +1,5 @@
 const Header = () => {
-  return <div>Hello from Header</div>;
+  return <header>Hello from Header</header>;
 };
 
 export default Header;
