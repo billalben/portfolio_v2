@@ -1,34 +1,20 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import DarkIcon from "./icons/DarkIcon";
 import LightIcon from "./icons/LightIcon";
 
 export default function ThemeToggle() {
-  const [theme, setTheme] = useState<"light" | "dark">("light");
-
-  // On mount, sync with localStorage or system preference
-  useEffect(() => {
-    const saved = localStorage.getItem("theme") as "light" | "dark" | null;
-    if (saved) {
-      setTheme(saved);
-      document.documentElement.setAttribute("data-theme", saved);
-    } else {
-      const prefersDark = window.matchMedia(
-        "(prefers-color-scheme: dark)"
-      ).matches;
-      const systemTheme = prefersDark ? "dark" : "light";
-      setTheme(systemTheme);
-      document.documentElement.setAttribute("data-theme", systemTheme);
-    }
-  }, []);
+  const [theme, setTheme] = useState<"light" | "dark">("dark");
 
   // Toggle handler
   const toggleTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
     setTheme(newTheme);
     document.documentElement.setAttribute("data-theme", newTheme);
-    localStorage.setItem("theme", newTheme);
+
+    // 🔥 Tell the rest of the app instantly
+    window.dispatchEvent(new CustomEvent("theme-change", { detail: newTheme }));
   };
 
   return (

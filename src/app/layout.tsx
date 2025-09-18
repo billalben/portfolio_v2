@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Inter } from "next/font/google";
+import { Inter } from "next/font/google";
+import BackgroundGlow from "@/components/BackgroundGlow";
 import "./globals.css";
 
 const inter = Inter({
@@ -20,7 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-theme="dark">
-      <body className={`${inter.variable} antialiased bg-white dark:bg-black`}>
+      <body
+        className={`${inter.variable} antialiased bg-white dark:bg-slate-950 relative`}
+      >
+        <BackgroundGlow />
         <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-16 lg:py-0">
           {children}
         </div>
