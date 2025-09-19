@@ -31,7 +31,7 @@ const Header = () => {
 
   const [activeSection, setActiveSection] = useState<TSection>(navItems[0].id);
 
-    const socialLinks = useMemo(
+  const socialLinks = useMemo(
     () => [
       { href: "https://github.com/billalben", icon: <GithubIcon width={24} height={24} />, label: "GitHub" },
       { href: "https://www.linkedin.com/in/billal-benzazoua/", icon: <LinkedinIcon width={24} height={24} />, label: "LinkedIn" },
@@ -61,8 +61,6 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [navItems]);
 
-
-
   return (
     <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[48%] lg:flex-col lg:justify-between lg:py-24">
       <div className="flex items-center gap-4">
@@ -71,20 +69,20 @@ const Header = () => {
       </div>
 
       <div>
-        <h1 className="text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-200 sm:text-5xl">{t("name")}</h1>
+        <h1 className="mt-3 text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-200 sm:text-5xl">{t("name")}</h1>
         <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-700 dark:text-slate-200 sm:text-xl">{t("title")}</h2>
         <p className="mt-4 max-w-xs leading-normal text-slate-600 dark:text-slate-400">{t("description")}</p>
       </div>
 
       <nav className="nav hidden lg:block">
-        <ul className="mt-16 w-max">
+        <ul className="flex flex-col gap-1 mt-16 w-max">
           {navItems.map((item) => {
             const isActive = activeSection === item.id;
             return (
               <li key={item.href}>
                 <a
                   href={item.href}
-                  className={`group flex items-center py-3${isActive ? " active" : ""}`}
+                  className={`group flex items-center py-3 ${isActive ? "active" : ""}`}
                   aria-current={isActive ? "page" : undefined}
                 >
                   <span

@@ -5,6 +5,7 @@
 /* Optional: set base styles */
 body {
   font-family: var(--font-inter), sans-serif;
+  font-size: 1rem;
 }
 
 * {

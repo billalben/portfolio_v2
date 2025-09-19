@@ -52,7 +52,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
 
   return (
     <html lang="en" dir={dir} data-theme="dark">
-      <body className={`${inter.variable} antialiased bg-slate-100 dark:bg-slate-900 relative`}>
+      <body className={`${inter.variable} antialiased bg-slate-100 dark:bg-slate-900 leading-relaxed relative`}>
         <BackgroundGlow />
         <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-16 lg:py-0">
           <NextIntlClientProvider>{children}</NextIntlClientProvider>

@@ -10,6 +10,14 @@
     "projects": "Projets"
   }
 },
+"About": {
+  "title": "À Propos",
+  "p1": "Je suis un <strong>Ingénieur Front-end</strong> passionné par la création d'interfaces utilisateur accessibles et parfaites, qui allient un design réfléchi à une ingénierie robuste. Je m'épanouis à l'intersection de la créativité et du code, en concevant des expériences non seulement visuellement attrayantes mais aussi méticuleusement optimisées pour les performances et la facilité d'utilisation.",
+  "p2": "Actuellement, je travaille en tant qu'Ingénieur Front-End chez <link>DataMasterDZ</link>, où je développe un système ERP moderne visant à rationaliser les opérations commerciales.",
+  "p3": "Dans mon rôle, je me concentre sur la création d'interfaces utilisateur intuitives et sur la garantie d'une expérience utilisateur fluide à travers l'application.",
+  "p4": "Je m'engage à apprendre continuellement et à me tenir au courant des dernières tendances et des meilleures pratiques de l'industrie.",
+  "p5": "Durant mon temps libre, j'aime explorer de nouvelles technologies et travailler sur des projets personnels qui challengent mes compétences et ma créativité."
+},
     "LocaleSwitcher": {
     "label": "Changer de langue",
 
