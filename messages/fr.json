@@ -1,7 +1,15 @@
 {
-  "HomePage": {
-    "title": "Bonjour le monde!"
-  },
+  "Header": {
+  "name": "Billal Benzazoua",
+  "title": "Ingénieur Frontend",
+  "description": "Je conçois des expériences numériques accessibles et pixel-perfect pour le web.",
+  "sections": {
+    "about": "À Propos",
+    "experience": "Expérience",
+    "skills": "Compétences",
+    "projects": "Projets"
+  }
+},
     "LocaleSwitcher": {
     "label": "Changer de langue",
 
@@ -16,5 +24,8 @@
       "name": "Projet Deux",
       "description": "C'est un projet sur Y"
     }
+  },
+  "Footer": {
+    "text": "Conçu et codé de manière lâche dans Visual Studio Code par moi-même. Construit avec Next.js et Tailwind CSS, déployé avec Vercel. Tout le texte est défini dans la police Inter."
   }
 }

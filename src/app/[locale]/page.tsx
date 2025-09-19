@@ -1,4 +1,5 @@
 import About from "@/components/sections/About";
+import Experience from "@/components/sections/Experience";
 import Footer from "@/components/sections/Footer";
 import Header from "@/components/sections/Header";
 import Projects from "@/components/sections/Projects";
@@ -11,8 +12,9 @@ export default function HomePage() {
 
       <main className="pt-24 lg:w-[52%] lg:py-24">
         <About />
-        <Projects />
+        <Experience />
         <Skills />
+        <Projects />
         <Footer />
       </main>
     </div>
