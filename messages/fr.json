@@ -34,6 +34,18 @@
         },
         "viewAll": "Voir tous les projets"
     },
+    "Experiences": {
+        "exp1": {
+            "name": "DataMasterDZ",
+            "description": "Développé et maintenu l'interface utilisateur d'un système ERP complet en utilisant React, Redux et Tailwind CSS. Collaboré avec des équipes interfonctionnelles pour concevoir et mettre en œuvre des interfaces utilisateur conviviales, garantissant une intégration transparente avec les services back-end. Axé sur l'optimisation des performances et le design réactif pour améliorer l'expérience utilisateur sur divers appareils.",
+            "date": "Octobre 2024 - Présent"
+        },
+        "exp2": {
+            "name": "Développeur Web Freelance",
+            "description": "Travaillé avec des clients pour créer des sites Web et des applications Web personnalisés en utilisant HTML, CSS, JavaScript et des frameworks populaires comme React et Vue.js. Géré tous les aspects du processus de développement, de la consultation initiale et de la conception à la mise en production et à la maintenance. Livré des solutions de haute qualité, réactives et optimisées pour le référencement, adaptées aux besoins des clients.",
+            "date": "2020"
+        }
+    },
     "Footer": {
         "text": "Conçu et codé de manière lâche dans Visual Studio Code par moi-même. Construit avec Next.js et Tailwind CSS, déployé avec Vercel. Tout le texte est défini dans la police Inter."
     }

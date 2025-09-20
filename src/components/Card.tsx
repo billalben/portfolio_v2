@@ -2,30 +2,35 @@ import Image from "next/image";
 
 import { ArrowOutwardIcon } from "./icons";
 
-type TProps = {
-    image: string;
+type CardProps = {
     title: string;
     description: string;
     link: string;
     skills?: string[];
-};
+} & ({ type: "project"; image: string } | { type: "experience"; date: string });
 
-const ProjectCard = ({ image, title, description, link, skills }: TProps) => {
+const Card = (props: CardProps) => {
+    const { title, description, link, skills } = props;
+
     return (
-        <div className="group relative flex gap-6 pb-1 transition-all lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+        <div className="group relative grid grid-cols-[120px_1fr] gap-6 pb-1 transition-all lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
             <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-100/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg dark:lg:group-hover:bg-slate-800/50"></div>
 
-            <div className="flex-shrink-0 relative">
-                <Image
-                    src={image}
-                    width={120}
-                    height={80}
-                    alt={title || "Project Image"}
-                    className="w-[120px] h-[80px] object-cover rounded border-2 border-slate-200/20 transition group-hover:border-slate-300/40 dark:border-slate-700/30 dark:group-hover:border-slate-600/50 opacity-100 pointer-events-none"
-                />
+            <div className="relative">
+                {props.type === "project" ? (
+                    <Image
+                        src={props.image}
+                        width={120}
+                        height={80}
+                        alt={title || "Project Image"}
+                        className="w-[120px] h-[80px] object-cover rounded border-2 border-slate-200/20 transition group-hover:border-slate-300/40 dark:border-slate-700/30 dark:group-hover:border-slate-600/50 opacity-100 pointer-events-none"
+                    />
+                ) : (
+                    <span className="text-sm font-semibold text-slate-700 dark:text-slate-400">{props.date}</span>
+                )}
             </div>
 
-            <div className="z-10 flex flex-1 flex-col gap-2 min-h-[80px] justify-start">
+            <div className="z-10 flex flex-col gap-2 min-h-[80px] justify-start">
                 <div>
                     <h3>
                         <a
@@ -48,7 +53,7 @@ const ProjectCard = ({ image, title, description, link, skills }: TProps) => {
 
                 {skills && (
                     <ul className="mt-2 flex flex-wrap gap-2">
-                        {skills.map((skill, index) => (
+                        {skills.map((skill: string, index: number) => (
                             <li key={index}>
                                 <div className="flex items-center rounded-full bg-teal-50 dark:bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-700 dark:text-teal-300 border border-teal-200/50 dark:border-teal-400/20">
                                     {skill}
@@ -62,4 +67,4 @@ const ProjectCard = ({ image, title, description, link, skills }: TProps) => {
     );
 };
 
-export default ProjectCard;
+export default Card;

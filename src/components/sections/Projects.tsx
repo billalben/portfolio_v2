@@ -1,31 +1,24 @@
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 
-import { ArrowOutwardIcon } from "../icons";
-import ProjectCard from "../ProjectCard";
+import Card from "../Card";
+
+const PROJECTS = [
+    {
+        id: "project1",
+        image: "/image.png",
+        url: "https://github.com/billalben/project1",
+        skills: ["React", "TypeScript", "Next.js"],
+    },
+    {
+        id: "project2",
+        image: "/image.png",
+        url: "https://github.com/billalben/project2",
+        skills: ["JavaScript", "CSS", "HTML"],
+    },
+];
 
 const Projects = () => {
-    const PROJECTS = [
-        {
-            id: "project1",
-            image: "/image.png",
-            url: "https://github.com/billalben/project1",
-            skills: ["React", "TypeScript", "Next.js"],
-        },
-        {
-            id: "project2",
-            image: "/image.png",
-            url: "https://github.com/billalben/project2",
-            skills: ["JavaScript", "CSS", "HTML"],
-        },
-        {
-            id: "project2",
-            image: "/image.png",
-            url: "https://github.com/billlalben/project2",
-            skills: ["JavaScript", "CSS", "HTML"],
-        },
-    ];
-
     const t = useTranslations("Projects");
 
     return (
@@ -33,8 +26,8 @@ const Projects = () => {
             <ul className="group/list flex flex-col gap-8">
                 {PROJECTS.map((project) => (
                     <li key={project.id}>
-                        <ProjectCard
-                            key={project.id}
+                        <Card
+                            type="project"
                             title={t(`${project.id}.name`)}
                             description={t(`${project.id}.description`)}
                             image={project.image}

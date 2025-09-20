@@ -33,6 +33,18 @@
         },
         "viewAll": "View all projects"
     },
+    "Experiences": {
+        "exp1": {
+            "name": "DataMasterDZ",
+            "description": "Developed and maintained the front-end of a comprehensive ERP system using React, Redux, and Tailwind CSS. Collaborated with cross-functional teams to design and implement user-friendly interfaces, ensuring seamless integration with back-end services. Focused on performance optimization and responsive design to enhance user experience across various devices.",
+            "date": "October 2024 - Present"
+        },
+        "exp2": {
+            "name": "Freelance Web Developer",
+            "description": "Worked with clients to create custom websites and web applications using HTML, CSS, JavaScript, and popular frameworks like React and Vue.js. Managed all aspects of the development process, from initial consultation and design to deployment and maintenance. Delivered high-quality, responsive, and SEO-optimized solutions tailored to client needs.",
+            "date": "2020"
+        }
+    },
     "Footer": {
         "text": "Loosely designed and coded in Visual Studio Code by yours truly. Built with Next.js and Tailwind CSS, deployed with Vercel. All text is set in the Inter typeface."
     }
