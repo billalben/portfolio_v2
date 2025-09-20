@@ -1,39 +1,40 @@
 {
-  "Header": {
-  "name": "Billal Benzazoua",
-  "title": "Ingénieur Frontend",
-  "description": "Je conçois des expériences numériques accessibles et pixel-perfect pour le web.",
-  "sections": {
-    "about": "À Propos",
-    "experience": "Expérience",
-    "skills": "Compétences",
-    "projects": "Projets"
-  }
-},
-"About": {
-  "title": "À Propos",
-  "p1": "Je suis un <strong>Ingénieur Front-end</strong> passionné par la création d'interfaces utilisateur accessibles et parfaites, qui allient un design réfléchi à une ingénierie robuste. Je m'épanouis à l'intersection de la créativité et du code, en concevant des expériences non seulement visuellement attrayantes mais aussi méticuleusement optimisées pour les performances et la facilité d'utilisation.",
-  "p2": "Actuellement, je travaille en tant qu'Ingénieur Front-End chez <link>DataMasterDZ</link>, où je développe un système ERP moderne visant à rationaliser les opérations commerciales.",
-  "p3": "Dans mon rôle, je me concentre sur la création d'interfaces utilisateur intuitives et sur la garantie d'une expérience utilisateur fluide à travers l'application.",
-  "p4": "Je m'engage à apprendre continuellement et à me tenir au courant des dernières tendances et des meilleures pratiques de l'industrie.",
-  "p5": "Durant mon temps libre, j'aime explorer de nouvelles technologies et travailler sur des projets personnels qui challengent mes compétences et ma créativité."
-},
-    "LocaleSwitcher": {
-    "label": "Changer de langue",
-
-    "locale": "{locale, select, fr {🇫🇷  Français} en {🇬🇧  Anglais} ar {🇸🇦  Arabe} other {Autre}}"
-  },
-  "Projects": {
-    "project1": {
-      "name": "Projet Un",
-      "description": "C'est un projet sur X"
+    "Header": {
+        "name": "Billal Benzazoua",
+        "title": "Ingénieur Frontend",
+        "description": "Je conçois des expériences numériques accessibles et pixel-perfect pour le web.",
+        "sections": {
+            "about": "À Propos",
+            "experience": "Expérience",
+            "skills": "Compétences",
+            "projects": "Projets"
+        }
     },
-    "project2": {
-      "name": "Projet Deux",
-      "description": "C'est un projet sur Y"
+    "About": {
+        "title": "À Propos",
+        "p1": "Je suis un <strong>Ingénieur Front-end</strong> passionné par la création d'interfaces utilisateur accessibles et parfaites, qui allient un design réfléchi à une ingénierie robuste. Je m'épanouis à l'intersection de la créativité et du code, en concevant des expériences non seulement visuellement attrayantes mais aussi méticuleusement optimisées pour les performances et la facilité d'utilisation.",
+        "p2": "Actuellement, je travaille en tant qu'Ingénieur Front-End chez <link>DataMasterDZ</link>, où je développe un système ERP moderne visant à rationaliser les opérations commerciales.",
+        "p3": "Dans mon rôle, je me concentre sur la création d'interfaces utilisateur intuitives et sur la garantie d'une expérience utilisateur fluide à travers l'application.",
+        "p4": "Je m'engage à apprendre continuellement et à me tenir au courant des dernières tendances et des meilleures pratiques de l'industrie.",
+        "p5": "Durant mon temps libre, j'aime explorer de nouvelles technologies et travailler sur des projets personnels qui challengent mes compétences et ma créativité."
+    },
+    "LocaleSwitcher": {
+        "label": "Changer de langue",
+
+        "locale": "{locale, select, fr {🇫🇷  Français} en {🇬🇧  Anglais} ar {🇸🇦  Arabe} other {Autre}}"
+    },
+    "Projects": {
+        "project1": {
+            "name": "Projet Un",
+            "description": "Cours vidéo qui enseigne comment construire une application web avec l'API Web de Spotify. Les sujets abordés incluent les principes des API REST, les flux d'authentification des utilisateurs, Node, Express, React, Styled Components, et plus encore."
+        },
+        "project2": {
+            "name": "Projet Deux",
+            "description": "Une application web qui permet aux utilisateurs de rechercher et de visualiser des GIFs animés à partir de l'API Giphy. Les fonctionnalités incluent des suggestions de recherche, des GIFs tendance et la possibilité d'ajouter des GIFs aux favoris et de les télécharger."
+        },
+        "viewAll": "Voir tous les projets"
+    },
+    "Footer": {
+        "text": "Conçu et codé de manière lâche dans Visual Studio Code par moi-même. Construit avec Next.js et Tailwind CSS, déployé avec Vercel. Tout le texte est défini dans la police Inter."
     }
-  },
-  "Footer": {
-    "text": "Conçu et codé de manière lâche dans Visual Studio Code par moi-même. Construit avec Next.js et Tailwind CSS, déployé avec Vercel. Tout le texte est défini dans la police Inter."
-  }
 }

@@ -1,38 +1,39 @@
 {
-  "Header": {
-    "name": "Billal Benzazoua",
-    "title": "Frontend engineer",
-    "description": "I build accessible, pixel-perfect digital experiences for the web.",
-    "sections": {
-      "about": "About",
-      "experience": "Experience",
-      "skills": "Skills",
-      "projects": "Projects"
-    }
-  },
-  "About": {
-    "title": "About Me",
-    "p1": "I am a <strong>Front-end Engineer</strong> passionate about building accessible, pixel-perfect user interfaces that merge thoughtful design with robust engineering. I thrive at the intersection of creativity and code, crafting experiences that are not only visually appealing but also meticulously engineered for performance and usability.",
-    "p2": "Currently, I work as a Front-End Engineer at <link>DataMasterDZ</link>, where I develop a modern ERP system to streamline business operations.",
-    "p3": "In my role, I focus on creating intuitive user interfaces and ensuring a seamless user experience across the application.",
-    "p4": "I am committed to continuous learning and staying up-to-date with the latest industry trends and best practices.",
-    "p5": "In my free time, I enjoy exploring new technologies and working on personal projects that challenge my skills and creativity."
-  },
-  "LocaleSwitcher": {
-    "label": "Change language",
-    "locale": "{locale, select, fr {🇫🇷  French} en {🇬🇧  English} ar {🇸🇦  Arabic} other {Other}}"
-  },
-  "Projects": {
-    "project1": {
-      "name": "Project One",
-      "description": "This is a project about X"
+    "Header": {
+        "name": "Billal Benzazoua",
+        "title": "Frontend engineer",
+        "description": "I build accessible, pixel-perfect digital experiences for the web.",
+        "sections": {
+            "about": "About",
+            "experience": "Experience",
+            "skills": "Skills",
+            "projects": "Projects"
+        }
     },
-    "project2": {
-      "name": "Project Two",
-      "description": "This is a project about Y"
+    "About": {
+        "title": "About Me",
+        "p1": "I am a <strong>Front-end Engineer</strong> passionate about building accessible, pixel-perfect user interfaces that merge thoughtful design with robust engineering. I thrive at the intersection of creativity and code, crafting experiences that are not only visually appealing but also meticulously engineered for performance and usability.",
+        "p2": "Currently, I work as a Front-End Engineer at <link>DataMasterDZ</link>, where I develop a modern ERP system to streamline business operations.",
+        "p3": "In my role, I focus on creating intuitive user interfaces and ensuring a seamless user experience across the application.",
+        "p4": "I am committed to continuous learning and staying up-to-date with the latest industry trends and best practices.",
+        "p5": "In my free time, I enjoy exploring new technologies and working on personal projects that challenge my skills and creativity."
+    },
+    "LocaleSwitcher": {
+        "label": "Change language",
+        "locale": "{locale, select, fr {🇫🇷  French} en {🇬🇧  English} ar {🇸🇦  Arabic} other {Other}}"
+    },
+    "Projects": {
+        "project1": {
+            "name": "Project One",
+            "description": "Video course that teaches how to build a web app with the Spotify Web API. Topics covered include the principles of REST APIs, user auth flows, Node, Express, React, Styled Components, and more."
+        },
+        "project2": {
+            "name": "Project Two",
+            "description": "A web app that allows users to search for and view animated GIFs from the Giphy API. Features include search suggestions, trending GIFs, and the ability to favorite and download GIFs."
+        },
+        "viewAll": "View all projects"
+    },
+    "Footer": {
+        "text": "Loosely designed and coded in Visual Studio Code by yours truly. Built with Next.js and Tailwind CSS, deployed with Vercel. All text is set in the Inter typeface."
     }
-  },
-  "Footer": {
-    "text": "Loosely designed and coded in Visual Studio Code by yours truly. Built with Next.js and Tailwind CSS, deployed with Vercel. All text is set in the Inter typeface."
-  }
 }

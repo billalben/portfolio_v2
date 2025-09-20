@@ -4,40 +4,40 @@
 
 /* Tailwind doesn't provide animation-play-state by default */
 @layer utilities {
-  .paused {
-    animation-play-state: paused !important;
-  }
+    .paused {
+        animation-play-state: paused !important;
+    }
 }
 
 /* Pause carousel animation when hovering over any logo */
 .carousel-container:has(li:hover) ul {
-  animation-play-state: paused !important;
+    animation-play-state: paused !important;
 }
 
 /* Optional: set base styles */
 body {
-  font-family: var(--font-inter), sans-serif;
-  font-size: 1rem;
+    font-family: var(--font-inter), sans-serif;
+    font-size: 1rem;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 @keyframes scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
 }
 
 @keyframes scroll-right {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0);
-  }
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
 }
