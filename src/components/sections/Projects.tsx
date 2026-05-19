@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 
 import Card from "../Card";
 import { ArrowOutwardIcon } from "../icons";
+import SectionTitle from "./SectionTitle";
 
 const PROJECTS = [
     {
@@ -23,9 +24,11 @@ const PROJECTS = [
 
 const Projects = () => {
     const t = useTranslations("Projects");
+    const tHeader = useTranslations("Header");
 
     return (
-        <section id="projects" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
+        <section id="projects" className="mb-16 scroll-mt-14 md:mb-24 lg:mb-36 lg:scroll-mt-24">
+            <SectionTitle id="projects">{tHeader("sections.projects")}</SectionTitle>
             <ul className="group/list flex flex-col gap-8">
                 {PROJECTS.map((project) => (
                     <li key={project.id}>

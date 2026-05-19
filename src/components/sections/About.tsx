@@ -1,10 +1,14 @@
 import { useTranslations } from "next-intl";
 
+import SectionTitle from "./SectionTitle";
+
 const About = () => {
     const t = useTranslations("About");
+    const tHeader = useTranslations("Header");
 
     return (
-        <section id="about" className="h-[calc(100vh-24px)] ">
+        <section id="about" className="h-[calc(100vh-24px)] scroll-mt-14 lg:scroll-mt-24">
+            <SectionTitle id="about">{tHeader("sections.about")}</SectionTitle>
             <div>
                 <p className="mb-4 text-slate-700 dark:text-slate-400">
                     {t.rich("p1", {

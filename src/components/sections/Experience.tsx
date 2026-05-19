@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 
 import Card from "../Card";
 import { ArrowOutwardIcon } from "../icons";
+import SectionTitle from "./SectionTitle";
 
 const EXPERIENCES = [
     {
@@ -19,9 +20,11 @@ const EXPERIENCES = [
 
 const Experience = () => {
     const t = useTranslations("Experiences");
+    const tHeader = useTranslations("Header");
 
     return (
-        <section id="experience" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
+        <section id="experience" className="mb-16 scroll-mt-14 md:mb-24 lg:mb-36 lg:scroll-mt-24">
+            <SectionTitle id="experience">{tHeader("sections.experience")}</SectionTitle>
             <ul className="group/list flex flex-col gap-8">
                 {EXPERIENCES.map((experience) => (
                     <li key={experience.id}>

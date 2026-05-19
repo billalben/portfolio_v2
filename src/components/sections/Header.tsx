@@ -76,14 +76,14 @@ const Header = () => {
                 <LocaleSwitcher />
             </div>
 
-            <div>
-                <h1 className="mt-3 text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-200 sm:text-5xl">{t("name")}</h1>
-                <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-700 dark:text-slate-200 sm:text-xl">{t("title")}</h2>
-                <p className="mt-4 max-w-xs leading-normal text-slate-600 dark:text-slate-400">{t("description")}</p>
+            <div className="mt-8 flex flex-col gap-2">
+                <h1 className="text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-200 sm:text-5xl">{t("name")}</h1>
+                <h2 className="text-lg font-semibold tracking-tight text-slate-700 dark:text-slate-200 sm:text-xl">{t("title")}</h2>
+                <p className="max-w-xs leading-normal text-slate-600 dark:text-slate-400">{t("description")}</p>
             </div>
 
-            <nav className="nav hidden lg:block">
-                <ul className="flex flex-col gap-1 mt-16 w-max">
+            <nav className="nav hidden lg:block mt-8">
+                <ul className="flex flex-col gap-0.5 w-max">
                     {navItems.map((item) => {
                         const isActive = activeSection === item.id;
                         return (

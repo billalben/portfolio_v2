@@ -1,3 +1,5 @@
+import { useTranslations } from "next-intl";
+
 import { GithubIcon } from "../icons";
 import {
     CssIcon,
@@ -17,8 +19,10 @@ import {
 } from "../icons/skills";
 import BoostrapIcon from "../icons/skills/BootstrapIcon";
 import LogoCarousel from "../LogoCarousel";
+import SectionTitle from "./SectionTitle";
 
 const Skills = () => {
+    const tHeader = useTranslations("Header");
     const logos = [
         { src: <GitIcon className="w-14 h-14 text-gray-900 dark:text-white" />, alt: "Git" },
         { src: <GithubIcon className="w-14 h-14 text-gray-900 dark:text-white" />, alt: "Github" },
@@ -42,7 +46,8 @@ const Skills = () => {
     ];
 
     return (
-        <section id="skills" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
+        <section id="skills" className="mb-16 scroll-mt-14 md:mb-24 lg:mb-36 lg:scroll-mt-24">
+            <SectionTitle id="skills">{tHeader("sections.skills")}</SectionTitle>
             <div className="space-y-20">
                 <LogoCarousel logos={logos} move="right" />
                 <LogoCarousel logos={logos2} move="left" />
