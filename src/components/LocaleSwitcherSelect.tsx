@@ -10,11 +10,11 @@ import { usePathname, useRouter } from "@/i18n/navigation";
 
 type Props = {
     children: ReactNode;
-    defaultValue: string;
+    value: string;
     label: string;
 };
 
-export default function LocaleSwitcherSelect({ children, defaultValue, label }: Props) {
+export default function LocaleSwitcherSelect({ children, value, label }: Props) {
     const router = useRouter();
     const [isPending, startTransition] = useTransition();
     const pathname = usePathname();
@@ -42,7 +42,7 @@ export default function LocaleSwitcherSelect({ children, defaultValue, label }: 
                     "cursor-pointer transition",
                     isPending && "opacity-60",
                 )}
-                defaultValue={defaultValue}
+                value={value}
                 disabled={isPending}
                 onChange={onSelectChange}
             >

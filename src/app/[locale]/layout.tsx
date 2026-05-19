@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 import { hasLocale, Locale, NextIntlClientProvider } from "next-intl";
-import { getTranslations, setRequestLocale } from "next-intl/server";
+import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { Inter } from "next/font/google";
 import { notFound } from "next/navigation";
 
-import "@/app/globals.css";
 import BackgroundGlow from "@/components/BackgroundGlow";
 import { routing } from "@/i18n/routing";
 
@@ -13,10 +12,10 @@ const inter = Inter({
     subsets: ["latin"],
 });
 
-// export const metadata: Metadata = {
-//     title: "Billal Benzazoua",
-//     description: "Personal portfolio of Billal Benzazoua, a passionate software developer and tech enthusiast.",
-// };
+// Helper function to determine if locale is RTL
+const isRTL = (locale: string) => {
+    return locale === "ar";
+};
 
 export function generateStaticParams() {
     return routing.locales.map((locale) => ({ locale }));
@@ -27,11 +26,11 @@ export async function generateMetadata(props: Omit<LayoutProps<"/[locale]">, "ch
 
     const t = await getTranslations({
         locale: locale as Locale,
-        namespace: "Header",
+        namespace: "LocaleLayout",
     });
 
     return {
-        title: `${t("name")} - ${t("title")}`,
+        title: t("title"),
         description: t("description"),
         openGraph: {
             title: `${t("name")} - ${t("title")}`,
@@ -41,7 +40,7 @@ export async function generateMetadata(props: Omit<LayoutProps<"/[locale]">, "ch
     };
 }
 
-export default async function LocaleLayout({ children, params }: LayoutProps<"/[locale]">) {
+export default async function RootLayout({ children, params }: LayoutProps<"/[locale]">) {
     // Ensure that the incoming `locale` is valid
     const { locale } = await params;
     if (!hasLocale(routing.locales, locale)) {
@@ -51,15 +50,22 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
     // Enable static rendering
     setRequestLocale(locale);
 
-    // Determine text direction
-    const dir = locale === "ar" ? "rtl" : "ltr";
+    const messages = await getMessages();
 
     return (
-        <html lang="en" dir={dir} data-theme="dark">
+        <html
+            data-theme="dark"
+            lang={locale}
+            dir={isRTL(locale) ? "rtl" : "ltr"}
+            //   className={`locale-${locale} ${jakarta.variable} ${rubik.variable} ${cairo.variable}`}
+            suppressHydrationWarning
+        >
             <body className={`${inter.variable} antialiased bg-slate-100 dark:bg-slate-900 leading-relaxed relative`}>
                 <BackgroundGlow />
-                <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-16 lg:py-0">
-                    <NextIntlClientProvider>{children}</NextIntlClientProvider>
+                <div className="mx-auto min-h-screen max-w-7xl px-6 py-12 font-sans md:px-12 md:py-16 lg:py-0">
+                    <NextIntlClientProvider locale={locale} messages={messages}>
+                        {children}
+                    </NextIntlClientProvider>
                 </div>
             </body>
         </html>

@@ -1,4 +1,9 @@
 {
+    "LocaleLayout": {
+        "name": "Billal Benzazoua",
+        "title": "Portfolio",
+        "description": "Je conçois des expériences numériques accessibles et pixel-perfect pour le web."
+    },
     "Header": {
         "name": "Billal Benzazoua",
         "title": "Ingénieur Frontend",
