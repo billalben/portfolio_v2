@@ -38,6 +38,21 @@
         },
         "viewAll": "View all projects"
     },
+    "ProjectsPage": {
+        "title": "All Projects",
+        "description": "A collection of projects I have built, with tech stacks and links.",
+        "columns": {
+            "project": "Project",
+            "builtWith": "Built with",
+            "link": "Link"
+        },
+        "items": {
+            "project1": { "name": "Spotify Web App Course" },
+            "project2": { "name": "Giphy Search App" },
+            "project3": { "name": "Portfolio v2" }
+        },
+        "openLink": "Open {project} (opens in a new tab)"
+    },
     "Experiences": {
         "exp1": {
             "name": "DataMasterDZ",
@@ -48,7 +63,8 @@
             "name": "Freelance Web Developer",
             "description": "Worked with clients to create custom websites and web applications using HTML, CSS, JavaScript, and popular frameworks like React and Vue.js. Managed all aspects of the development process, from initial consultation and design to deployment and maintenance. Delivered high-quality, responsive, and SEO-optimized solutions tailored to client needs.",
             "date": "2020"
-        }
+        },
+        "downloadResume": "View Full Résumé"
     },
     "Footer": {
         "text": "Loosely designed and coded in Visual Studio Code by yours truly. Built with Next.js and Tailwind CSS, deployed with Vercel. All text is set in the Inter typeface."

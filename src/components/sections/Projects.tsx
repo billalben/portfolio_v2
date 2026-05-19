@@ -1,7 +1,10 @@
 import { useTranslations } from "next-intl";
-import Link from "next/link";
+
+import { Link } from "@/i18n/navigation";
+import { cn } from "@/lib/utils";
 
 import Card from "../Card";
+import { ArrowOutwardIcon } from "../icons";
 
 const PROJECTS = [
     {
@@ -40,8 +43,20 @@ const Projects = () => {
 
             <div className="mt-10">
                 {/* show all projects in /projects route */}
-                <Link href="/projects" className="text-teal-600 hover:underline">
+                <Link href="/projects" className="flex items-center gap-1 leading-tight font-semibold group/link text-base">
                     {t("viewAll")}
+                    <ArrowOutwardIcon
+                        className={cn(
+                            // LTR base + hover
+                            "inline-block h-4 w-4 shrink-0 transition-transform motion-reduce:transition-none translate-y-px",
+                            "group-hover/link:-translate-y-1 group-hover/link:translate-x-1",
+                            "group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1",
+                            // RTL: flip icon + reverse horizontal direction on hover
+                            "rtl:scale-x-[-1]",
+                            "rtl:group-hover/link:-translate-x-1",
+                            "rtl:group-focus-visible/link:-translate-x-1",
+                        )}
+                    />
                 </Link>
             </div>
         </section>

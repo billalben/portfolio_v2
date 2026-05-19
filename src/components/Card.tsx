@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import { cn } from "@/lib/utils";
+
 import { ArrowOutwardIcon } from "./icons";
 
 type CardProps = {
@@ -13,7 +15,7 @@ const Card = (props: CardProps) => {
     const { title, description, link, skills } = props;
 
     return (
-        <div className="group relative grid grid-cols-[120px_1fr] gap-6 pb-1 transition-all lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+        <div className="group relative grid grid-cols-[120px_1fr] gap-4 pb-1 transition-all lg:hover:opacity-100! lg:group-hover/list:opacity-50">
             <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-100/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg dark:lg:group-hover:bg-slate-800/50"></div>
 
             <div className="relative">
@@ -32,19 +34,29 @@ const Card = (props: CardProps) => {
 
             <div className="z-10 flex flex-col gap-2 min-h-[80px] justify-start">
                 <div>
-                    <h3>
+                    <h3 className="font-medium leading-tight text-slate-900 dark:text-slate-100 text-base">
                         <a
                             href={link}
-                            className="inline-flex items-baseline font-medium leading-tight text-slate-900 hover:text-teal-600 dark:text-slate-100 dark:hover:text-teal-400 focus-visible:text-teal-600 dark:focus-visible:text-teal-400 group/link text-base transition-colors"
+                            className="inline-flex items-center hover:text-teal-600 dark:hover:text-teal-400 focus-visible:text-teal-600 dark:focus-visible:text-teal-400 group/link transition-colors"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block lg:-inset-x-8"></span>
-                            <span className="space-x-2">
-                                {title}
-
-                                <ArrowOutwardIcon className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" />
-                            </span>
+                            <span
+                                className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block lg:-inset-x-8"
+                                aria-hidden="true"
+                            />
+                            {title}
+                            <ArrowOutwardIcon
+                                aria-hidden="true"
+                                className={cn(
+                                    "inline-block h-4 w-4 shrink-0 transition-transform motion-reduce:transition-none translate-y-px ms-1",
+                                    "group-hover/link:-translate-y-1 group-hover/link:translate-x-1",
+                                    "group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1",
+                                    "rtl:scale-x-[-1]",
+                                    "rtl:group-hover/link:-translate-x-1",
+                                    "rtl:group-focus-visible/link:-translate-x-1",
+                                )}
+                            />
                         </a>
                     </h3>
 

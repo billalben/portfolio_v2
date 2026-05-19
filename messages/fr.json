@@ -39,6 +39,21 @@
         },
         "viewAll": "Voir tous les projets"
     },
+    "ProjectsPage": {
+        "title": "Tous les projets",
+        "description": "Une sélection de projets que j'ai réalisés, avec les technologies utilisées et les liens.",
+        "columns": {
+            "project": "Projet",
+            "builtWith": "Technologies",
+            "link": "Lien"
+        },
+        "items": {
+            "project1": { "name": "Cours application Spotify" },
+            "project2": { "name": "Application de recherche Giphy" },
+            "project3": { "name": "Portfolio v2" }
+        },
+        "openLink": "Ouvrir {project} (s'ouvre dans un nouvel onglet)"
+    },
     "Experiences": {
         "exp1": {
             "name": "DataMasterDZ",
@@ -49,7 +64,8 @@
             "name": "Développeur Web Freelance",
             "description": "Travaillé avec des clients pour créer des sites Web et des applications Web personnalisés en utilisant HTML, CSS, JavaScript et des frameworks populaires comme React et Vue.js. Géré tous les aspects du processus de développement, de la consultation initiale et de la conception à la mise en production et à la maintenance. Livré des solutions de haute qualité, réactives et optimisées pour le référencement, adaptées aux besoins des clients.",
             "date": "2020"
-        }
+        },
+        "downloadResume": "Voir le CV"
     },
     "Footer": {
         "text": "Conçu et codé de manière lâche dans Visual Studio Code par moi-même. Construit avec Next.js et Tailwind CSS, déployé avec Vercel. Tout le texte est défini dans la police Inter."
