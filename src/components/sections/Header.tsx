@@ -94,7 +94,7 @@ const Header = () => {
                                     aria-current={isActive ? "page" : undefined}
                                 >
                                     <span
-                                        className={`nav-indicator mx-4 h-px w-8 transition-all motion-reduce:transition-none
+                                        className={`nav-indicator mx-4 h-px w-8 transition-all duration-300
                       ${isActive ? "w-16 bg-slate-900 dark:bg-slate-200" : "bg-slate-300 dark:bg-slate-600"}
                       group-hover:w-16 group-hover:bg-slate-900 dark:group-hover:bg-slate-200
                       group-focus-visible:w-16 group-focus-visible:bg-slate-900 dark:group-focus-visible:bg-slate-200`}

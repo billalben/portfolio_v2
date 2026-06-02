@@ -23,24 +23,25 @@ const Experience = () => {
     const tHeader = useTranslations("Header");
 
     return (
-        <section id="experience" className="mb-16 scroll-mt-14 md:mb-24 lg:mb-36 lg:scroll-mt-24">
+        <section id="experience">
             <SectionTitle id="experience">{tHeader("sections.experience")}</SectionTitle>
-            <ul className="group/list flex flex-col gap-8">
-                {EXPERIENCES.map((experience) => (
-                    <li key={experience.id}>
-                        <Card
-                            key={experience.id}
-                            type="experience"
-                            title={t(`${experience.id}.name`)}
-                            description={t(`${experience.id}.description`)}
-                            link={experience.url}
-                            date={t(`${experience.id}.date`)}
-                        />
-                    </li>
-                ))}
-            </ul>
 
-            <div className="mt-10">
+            <div className="flex flex-col gap-8">
+                <ul className="group/list flex flex-col gap-8">
+                    {EXPERIENCES.map((experience) => (
+                        <li key={experience.id}>
+                            <Card
+                                key={experience.id}
+                                type="experience"
+                                title={t(`${experience.id}.name`)}
+                                description={t(`${experience.id}.description`)}
+                                link={experience.url}
+                                date={t(`${experience.id}.date`)}
+                            />
+                        </li>
+                    ))}
+                </ul>
+
                 {/* link for pdf resume */}
                 <Link
                     href="/resume.pdf"

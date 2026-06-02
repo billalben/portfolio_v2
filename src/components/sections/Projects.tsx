@@ -27,24 +27,24 @@ const Projects = () => {
     const tHeader = useTranslations("Header");
 
     return (
-        <section id="projects" className="mb-16 scroll-mt-14 md:mb-24 lg:mb-36 lg:scroll-mt-24">
+        <section id="projects">
             <SectionTitle id="projects">{tHeader("sections.projects")}</SectionTitle>
-            <ul className="group/list flex flex-col gap-8">
-                {PROJECTS.map((project) => (
-                    <li key={project.id}>
-                        <Card
-                            type="project"
-                            title={t(`${project.id}.name`)}
-                            description={t(`${project.id}.description`)}
-                            image={project.image}
-                            link={project.url}
-                            skills={project.skills}
-                        />
-                    </li>
-                ))}
-            </ul>
+            <div className="flex flex-col gap-8 h-full justify-center">
+                <ul className="group/list flex flex-col gap-8">
+                    {PROJECTS.map((project) => (
+                        <li key={project.id}>
+                            <Card
+                                type="project"
+                                title={t(`${project.id}.name`)}
+                                description={t(`${project.id}.description`)}
+                                image={project.image}
+                                link={project.url}
+                                skills={project.skills}
+                            />
+                        </li>
+                    ))}
+                </ul>
 
-            <div className="mt-10">
                 {/* show all projects in /projects route */}
                 <Link href="/projects" className="flex items-center gap-1 leading-tight font-semibold group/link text-base">
                     {t("viewAll")}

@@ -46,7 +46,7 @@ const Skills = () => {
     ];
 
     return (
-        <section id="skills" className="mb-16 scroll-mt-14 md:mb-24 lg:mb-36 lg:scroll-mt-24">
+        <section id="skills">
             <SectionTitle id="skills">{tHeader("sections.skills")}</SectionTitle>
             <div className="space-y-20">
                 <LogoCarousel logos={logos} move="right" />

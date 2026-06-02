@@ -7,16 +7,16 @@ const About = () => {
     const tHeader = useTranslations("Header");
 
     return (
-        <section id="about" className="h-[calc(100vh-24px)] scroll-mt-14 lg:scroll-mt-24">
+        <section id="about" className="h-screen scroll-mt-14">
             <SectionTitle id="about">{tHeader("sections.about")}</SectionTitle>
-            <div>
-                <p className="mb-4 text-slate-700 dark:text-slate-400">
+            <div className="flex flex-col gap-4 justify-center h-full">
+                <p className="text-slate-700 dark:text-slate-400">
                     {t.rich("p1", {
                         strong: (chunks) => <strong className="font-semibold">{chunks}</strong>,
                     })}
                 </p>
 
-                <p className="mb-4 text-slate-700 dark:text-slate-400">
+                <p className="text-slate-700 dark:text-slate-400">
                     {t.rich("p2", {
                         link: (chunks) => (
                             <a
@@ -31,11 +31,11 @@ const About = () => {
                     })}
                 </p>
 
-                <p className="mb-4 text-slate-700 dark:text-slate-400">{t("p3")}</p>
+                <p className="text-slate-700 dark:text-slate-400">{t("p3")}</p>
 
-                <p className="mb-4 text-slate-700 dark:text-slate-400">{t("p4")}</p>
+                <p className="text-slate-700 dark:text-slate-400">{t("p4")}</p>
 
-                <p className="mb-4 text-slate-700 dark:text-slate-400">{t("p5")}</p>
+                <p className="text-slate-700 dark:text-slate-400">{t("p5")}</p>
             </div>
         </section>
     );

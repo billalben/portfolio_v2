@@ -15,7 +15,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
         <div className="lg:flex lg:justify-between lg:gap-4">
             <Header />
 
-            <main className="relative pt-24 lg:w-[52%] lg:py-24">
+            <main className="relative lg:w-[60%] flex flex-col gap-24">
                 <About />
                 <Experience />
                 <Skills />

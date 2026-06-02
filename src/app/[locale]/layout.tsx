@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { hasLocale, Locale, NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { Inter } from "next/font/google";
@@ -53,13 +52,7 @@ export default async function RootLayout({ children, params }: LayoutProps<"/[lo
     const messages = await getMessages();
 
     return (
-        <html
-            data-theme="dark"
-            lang={locale}
-            dir={isRTL(locale) ? "rtl" : "ltr"}
-            //   className={`locale-${locale} ${jakarta.variable} ${rubik.variable} ${cairo.variable}`}
-            suppressHydrationWarning
-        >
+        <html data-theme="dark" lang={locale} dir={isRTL(locale) ? "rtl" : "ltr"} suppressHydrationWarning>
             <body className={`${inter.variable} antialiased bg-slate-100 dark:bg-slate-900 leading-relaxed relative`}>
                 <BackgroundGlow />
                 <div className="mx-auto min-h-screen max-w-7xl px-6 py-12 font-sans md:px-12 md:py-16 lg:py-0">

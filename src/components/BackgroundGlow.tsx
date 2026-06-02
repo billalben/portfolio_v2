@@ -42,11 +42,24 @@ const BackgroundGlow = () => {
             if (!frameId) {
                 frameId = requestAnimationFrame(() => {
                     if (glowRef.current) {
-                        glowRef.current.style.background = `radial-gradient(
-              600px at ${position.current.x}px ${position.current.y}px,
-              ${theme === "dark" ? "rgba(99,102,241,0.20)" : "rgba(56,189,248,0.20)"},
-              transparent 80%
+                        const isDark = theme === "dark";
+                        const tint = isDark ? "99,102,241" : "56,189,248";
+                        const gradient = isDark
+                            ? `radial-gradient(
+              circle 600px at ${position.current.x}px ${position.current.y}px,
+              rgba(${tint},0.035) 0%,
+              rgba(${tint},0.018) 35%,
+              rgba(${tint},0.006) 55%,
+              transparent 72%
+            )`
+                            : `radial-gradient(
+              circle 600px at ${position.current.x}px ${position.current.y}px,
+              rgba(${tint},0.14) 0%,
+              rgba(${tint},0.07) 35%,
+              rgba(${tint},0.025) 55%,
+              transparent 72%
             )`;
+                        glowRef.current.style.background = gradient;
                     }
                     frameId = 0;
                 });
@@ -66,7 +79,7 @@ const BackgroundGlow = () => {
 
     if (!enabled) return null; // ❌ Don't render on small screens
 
-    return <div ref={glowRef} className="pointer-events-none fixed inset-0 z-[-1] transition duration-300" />;
+    return <div ref={glowRef} className="pointer-events-none fixed inset-0 z-[-1]" />;
 };
 
 export default BackgroundGlow;
