@@ -1,3 +1,4 @@
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { hasLocale, Locale, NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { Inter } from "next/font/google";
@@ -61,6 +62,8 @@ export default async function RootLayout({ children, params }: LayoutProps<"/[lo
                     </NextIntlClientProvider>
                 </div>
             </body>
+
+            <GoogleAnalytics gaId="G-CGT7K6SW93" />
         </html>
     );
 }
