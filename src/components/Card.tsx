@@ -25,14 +25,14 @@ const Card = (props: CardProps) => {
                         width={120}
                         height={80}
                         alt={title || "Project Image"}
-                        className="w-[120px] h-[80px] object-cover rounded border-2 border-slate-200/20 transition group-hover:border-slate-300/40 dark:border-slate-700/30 dark:group-hover:border-slate-600/50 opacity-100 pointer-events-none"
+                        className="w-30 h-20 object-cover rounded border-2 border-slate-200/20 transition group-hover:border-slate-300/40 dark:border-slate-700/30 dark:group-hover:border-slate-600/50 opacity-100 pointer-events-none"
                     />
                 ) : (
                     <span className="text-sm font-semibold text-slate-700 dark:text-slate-400">{props.date}</span>
                 )}
             </div>
 
-            <div className="z-10 flex flex-col gap-2 min-h-[80px] justify-start">
+            <div className="z-10 flex flex-col gap-2 min-h-20 justify-start">
                 <div>
                     <h3 className="font-medium leading-tight text-slate-900 dark:text-slate-100 text-base">
                         <a

@@ -2,7 +2,6 @@ import { setRequestLocale } from "next-intl/server";
 
 import About from "@/components/sections/About";
 import Experience from "@/components/sections/Experience";
-import Footer from "@/components/sections/Footer";
 import Header from "@/components/sections/Header";
 import Projects from "@/components/sections/Projects";
 import Skills from "@/components/sections/Skills";
@@ -20,7 +19,6 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
                 <Experience />
                 <Skills />
                 <Projects />
-                <Footer />
             </main>
         </div>
     );

@@ -66,8 +66,5 @@
             "date": "2020"
         },
         "downloadResume": "عرض السيرة الذاتية"
-    },
-    "Footer": {
-        "text": "تم تصميمه وترميزه بشكل فضفاض في Visual Studio Code بواسطة شخصي. تم بناؤه باستخدام Next.js و Tailwind CSS ، وتم نشره باستخدام Vercel. تم تعيين كل النصوص في خط Inter."
     }
 }

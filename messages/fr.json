@@ -66,8 +66,5 @@
             "date": "2020"
         },
         "downloadResume": "Voir le CV"
-    },
-    "Footer": {
-        "text": "Conçu et codé de manière lâche dans Visual Studio Code par moi-même. Construit avec Next.js et Tailwind CSS, déployé avec Vercel. Tout le texte est défini dans la police Inter."
     }
 }

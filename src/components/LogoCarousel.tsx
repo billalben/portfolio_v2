@@ -26,7 +26,7 @@ const LogoCarousel = ({ logos, move = "left" }: TProps) => {
     const animationClass = move === "left" ? "animate-[scroll_25s_linear_infinite]" : "animate-[scroll-right_25s_linear_infinite]";
 
     return (
-        <div className="carousel-container relative w-full overflow-hidden group [mask-image:linear-gradient(to_right,transparent_0,black_128px,black_calc(100%-128px),transparent_100%)]">
+        <div className="carousel-container relative w-full overflow-hidden group mask-[linear-gradient(to_right,transparent_0,black_128px,black_calc(100%-128px),transparent_100%)]">
             <div ref={containerRef} className="flex w-max flex-nowrap">
                 <ul className={`flex items-center [&_li]:mx-8 [&_img]:max-w-none ${animationClass}`}>
                     {logos.map((logo, i) => (
