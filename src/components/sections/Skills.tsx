@@ -46,7 +46,7 @@ const Skills = () => {
     ];
 
     return (
-        <section id="skills" className="flex min-h-svh h-full snap-start flex-col">
+        <section id="skills" className="flex snap-start flex-col py-16 lg:min-h-svh lg:h-full lg:py-0">
             <SectionTitle id="skills">{tHeader("sections.skills")}</SectionTitle>
             <div className="my-auto flex w-full flex-col gap-16">
                 <LogoCarousel logos={logos} move="right" />
