@@ -35,15 +35,15 @@ const Header = () => {
         () => [
             {
                 href: "https://github.com/billalben",
-                icon: <GithubIcon className="w-6 h-6 text-gray-900 dark:text-white" />,
+                icon: <GithubIcon className="w-6 h-6 dark:text-white" />,
                 label: "GitHub",
             },
             {
                 href: "https://www.linkedin.com/in/billal-benzazoua/",
-                icon: <LinkedinIcon className="w-6 h-6 text-gray-900 dark:text-white" />,
+                icon: <LinkedinIcon className="w-6 h-6" />,
                 label: "LinkedIn",
             },
-            { href: "mailto:billalben@gmail.com", icon: <GmailIcon className="w-6 h-6 text-gray-900 dark:text-white" />, label: "Gmail" },
+            { href: "mailto:billalben@gmail.com", icon: <GmailIcon className="w-6 h-6" />, label: "Gmail" },
         ],
         [],
     );
@@ -114,7 +114,7 @@ const Header = () => {
                 </ul>
             </nav>
 
-            <ul className="mt-8 flex gap-6 items-center group" aria-label="Social media">
+            <ul className="mt-8 flex gap-4 items-center group" aria-label="Social media">
                 {socialLinks.map((link) => (
                     <li key={link.href} className="transition-opacity duration-300 group-hover:opacity-50 hover:opacity-100">
                         <a href={link.href} target="_blank" rel="noopener noreferrer" aria-label={`${link.label} (opens in a new tab)`}>
