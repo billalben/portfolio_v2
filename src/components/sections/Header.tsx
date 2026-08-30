@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 
+import { IconFileCvFilled } from "@tabler/icons-react";
 import { useTranslations } from "next-intl";
 
 import { GithubIcon, GmailIcon, LinkedinIcon } from "../icons";
@@ -37,13 +38,21 @@ const Header = () => {
                 href: "https://github.com/billalben",
                 icon: <GithubIcon className="w-6 h-6 dark:text-white" />,
                 label: "GitHub",
+                download: false,
             },
             {
                 href: "https://www.linkedin.com/in/billal-benzazoua/",
                 icon: <LinkedinIcon className="w-6 h-6" />,
                 label: "LinkedIn",
+                download: false,
             },
-            { href: "mailto:billalben@gmail.com", icon: <GmailIcon className="w-6 h-6" />, label: "Gmail" },
+            { href: "mailto:billalben@gmail.com", icon: <GmailIcon className="w-6 h-6" />, label: "Gmail", download: false },
+            {
+                href: "/Billal_Benzazoua_CV.pdf",
+                icon: <IconFileCvFilled className="w-6 h-6 text-gray-900 dark:text-white" />,
+                label: "CV",
+                download: true,
+            },
         ],
         [],
     );
@@ -117,7 +126,13 @@ const Header = () => {
             <ul className="mt-8 flex gap-4 items-center group" aria-label="Social media">
                 {socialLinks.map((link) => (
                     <li key={link.href} className="transition-opacity duration-300 group-hover:opacity-50 hover:opacity-100">
-                        <a href={link.href} target="_blank" rel="noopener noreferrer" aria-label={`${link.label} (opens in a new tab)`}>
+                        <a
+                            href={link.href}
+                            target={link.download ? undefined : "_blank"}
+                            rel="noopener noreferrer"
+                            download={link.download}
+                            aria-label={link.download ? link.label : `${link.label} (opens in a new tab)`}
+                        >
                             {link.icon}
                         </a>
                     </li>
