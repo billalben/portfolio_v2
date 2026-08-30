@@ -27,9 +27,9 @@ const Projects = () => {
     const tHeader = useTranslations("Header");
 
     return (
-        <section id="projects">
+        <section id="projects" className="flex min-h-svh h-full snap-start flex-col">
             <SectionTitle id="projects">{tHeader("sections.projects")}</SectionTitle>
-            <div className="flex flex-col gap-8 h-full justify-center">
+            <div className="my-auto flex w-full flex-col gap-8">
                 <ul className="group/list flex flex-col gap-8">
                     {PROJECTS.map((project) => (
                         <li key={project.id}>

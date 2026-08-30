@@ -23,10 +23,10 @@ const Experience = () => {
     const tHeader = useTranslations("Header");
 
     return (
-        <section id="experience">
+        <section id="experience" className="flex min-h-svh h-full snap-start flex-col">
             <SectionTitle id="experience">{tHeader("sections.experience")}</SectionTitle>
 
-            <div className="flex flex-col gap-8">
+            <div className="my-auto flex w-full flex-col gap-8">
                 <ul className="group/list flex flex-col gap-8">
                     {EXPERIENCES.map((experience) => (
                         <li key={experience.id}>

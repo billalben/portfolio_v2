@@ -7,9 +7,9 @@ const About = () => {
     const tHeader = useTranslations("Header");
 
     return (
-        <section id="about" className="h-screen scroll-mt-14">
+        <section id="about" className="flex min-h-svh h-full snap-start flex-col">
             <SectionTitle id="about">{tHeader("sections.about")}</SectionTitle>
-            <div className="flex flex-col gap-4 justify-center h-full">
+            <div className="my-auto flex w-full flex-col gap-4">
                 <p className="text-slate-700 dark:text-slate-400">
                     {t.rich("p1", {
                         strong: (chunks) => <strong className="font-semibold">{chunks}</strong>,

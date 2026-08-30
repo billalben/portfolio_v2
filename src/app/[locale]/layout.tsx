@@ -53,7 +53,13 @@ export default async function RootLayout({ children, params }: LayoutProps<"/[lo
     const messages = await getMessages();
 
     return (
-        <html data-theme="dark" lang={locale} dir={isRTL(locale) ? "rtl" : "ltr"} suppressHydrationWarning>
+        <html
+            data-theme="dark"
+            lang={locale}
+            dir={isRTL(locale) ? "rtl" : "ltr"}
+            suppressHydrationWarning
+            className="lg:snap-y lg:snap-mandatory"
+        >
             <body className={`${inter.variable} antialiased bg-slate-100 dark:bg-slate-900 leading-relaxed relative`}>
                 <BackgroundGlow />
                 <div className="mx-auto min-h-screen max-w-7xl px-6 py-12 font-sans md:px-12 md:py-16 lg:py-0">
