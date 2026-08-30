@@ -58,7 +58,7 @@ export default async function RootLayout({ children, params }: LayoutProps<"/[lo
             lang={locale}
             dir={isRTL(locale) ? "rtl" : "ltr"}
             suppressHydrationWarning
-            className="lg:snap-y lg:snap-mandatory"
+            className="scroll-smooth lg:snap-y lg:snap-proximity"
         >
             <body className={`${inter.variable} antialiased bg-slate-100 dark:bg-slate-900 leading-relaxed relative`}>
                 <BackgroundGlow />

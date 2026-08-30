@@ -25,7 +25,7 @@ const Skills = () => {
     const tHeader = useTranslations("Header");
     const logos = [
         { src: <GitIcon className="w-14 h-14" />, alt: "Git" },
-        { src: <GithubIcon className="w-14 h-14 dark:text-white" />, alt: "Github" },
+        { src: <GithubIcon className="w-14 h-14 text-slate-900 dark:text-white" />, alt: "Github" },
         { src: <HtmlIcon className="w-14 h-14" />, alt: "HTML" },
         { src: <CssIcon className="w-14 h-14" />, alt: "CSS" },
         { src: <JsIcon className="w-14 h-14" />, alt: "JavaScript" },

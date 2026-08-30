@@ -36,7 +36,7 @@ const Header = () => {
         () => [
             {
                 href: "https://github.com/billalben",
-                icon: <GithubIcon className="w-6 h-6 dark:text-white" />,
+                icon: <GithubIcon className="w-6 h-6 text-slate-900 dark:text-white" />,
                 label: "GitHub",
                 download: false,
             },
