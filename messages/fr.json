@@ -1,8 +1,8 @@
 {
     "LocaleLayout": {
         "name": "Billal Benzazoua",
-        "title": "Portfolio - Ingénieur Informatique",
-        "description": "Je conçois des expériences numériques accessibles et pixel-perfect pour le web."
+        "title": "Billal Benzazoua — Ingénieur Frontend | React, Next.js, TypeScript",
+        "description": "Ingénieur Frontend spécialisé dans la création d'expériences web accessibles et pixel-perfect avec React, Next.js et TypeScript. Découvrez mes projets et mon expérience."
     },
     "Header": {
         "name": "Billal Benzazoua",
@@ -66,5 +66,8 @@
             "date": "2020"
         },
         "downloadResume": "Voir le CV"
+    },
+    "Manifest": {
+        "name": "Billal Benzazoua — Ingénieur Frontend"
     }
 }

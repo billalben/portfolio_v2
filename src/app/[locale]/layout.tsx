@@ -12,9 +12,17 @@ const inter = Inter({
     subsets: ["latin"],
 });
 
+const SITE_URL = "https://www.billalbenz.com";
+
 // Helper function to determine if locale is RTL
 const isRTL = (locale: string) => {
     return locale === "ar";
+};
+
+const OG_LOCALES: Record<string, string> = {
+    en: "en_US",
+    fr: "fr_FR",
+    ar: "ar_AR",
 };
 
 export function generateStaticParams() {
@@ -29,13 +37,44 @@ export async function generateMetadata(props: Omit<LayoutProps<"/[locale]">, "ch
         namespace: "LocaleLayout",
     });
 
+    const tHeader = await getTranslations({
+        locale: locale as Locale,
+        namespace: "Header",
+    });
+
     return {
+        metadataBase: new URL(SITE_URL),
         title: t("title"),
         description: t("description"),
+        creator: tHeader("name"),
+        authors: [{ name: tHeader("name"), url: "https://github.com/billalben" }],
+        alternates: {
+            canonical: `/${locale}`,
+            languages: {
+                "x-default": "/en",
+                en: "/en",
+                fr: "/fr",
+                ar: "/ar",
+            },
+        },
         openGraph: {
-            title: `${t("name")} - ${t("title")}`,
+            type: "website",
+            siteName: tHeader("name"),
+            title: `${tHeader("name")} - ${tHeader("title")}`,
             description: t("description"),
-            locale,
+            locale: OG_LOCALES[locale] ?? "en_US",
+            url: `${SITE_URL}/${locale}`,
+            alternateLocale: ["en_US", "fr_FR", "ar_AR"],
+        },
+        twitter: {
+            card: "summary_large_image",
+            title: `${tHeader("name")} - ${tHeader("title")}`,
+            description: t("description"),
+            creator: "@billalben",
+        },
+        robots: {
+            index: true,
+            follow: true,
         },
     };
 }
@@ -52,6 +91,39 @@ export default async function RootLayout({ children, params }: LayoutProps<"/[lo
 
     const messages = await getMessages();
 
+    const t = await getTranslations({ locale: locale as Locale, namespace: "Header" });
+
+    const personStructuredData = {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        name: t("name"),
+        url: `${SITE_URL}/${locale}`,
+        jobTitle: t("title"),
+        description: t("description"),
+        email: "mailto:billalben@gmail.com",
+        image: `${SITE_URL}/image.png`,
+        worksFor: {
+            "@type": "Organization",
+            name: "DataMasterDZ",
+        },
+        sameAs: [
+            "https://github.com/billalben",
+            "https://www.linkedin.com/in/billal-benzazoua/",
+        ],
+        knowsAbout: [
+            "React",
+            "Next.js",
+            "TypeScript",
+            "JavaScript",
+            "Tailwind CSS",
+            "Redux",
+            "Node.js",
+            "Vue.js",
+            "Accessibility",
+            "Responsive Web Design",
+        ],
+    };
+
     return (
         <html
             data-theme="dark"
@@ -67,6 +139,10 @@ export default async function RootLayout({ children, params }: LayoutProps<"/[lo
                         {children}
                     </NextIntlClientProvider>
                 </div>
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(personStructuredData) }}
+                />
             </body>
 
             <GoogleAnalytics gaId="G-CGT7K6SW93" />

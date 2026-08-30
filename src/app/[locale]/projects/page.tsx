@@ -12,8 +12,31 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/projects
     const site = await getTranslations({ locale: locale as Locale, namespace: "Header" });
 
     return {
+        metadataBase: new URL("https://www.billalbenz.com"),
         title: `${t("title")} | ${site("name")}`,
         description: t("description"),
+        alternates: {
+            canonical: `/${locale}/projects`,
+            languages: {
+                "x-default": "/en/projects",
+                en: "/en/projects",
+                fr: "/fr/projects",
+                ar: "/ar/projects",
+            },
+        },
+        openGraph: {
+            type: "website",
+            siteName: site("name"),
+            title: `${t("title")} | ${site("name")}`,
+            description: t("description"),
+            locale: locale === "fr" ? "fr_FR" : locale === "ar" ? "ar_AR" : "en_US",
+            url: `https://www.billalbenz.com/${locale}/projects`,
+        },
+        twitter: {
+            card: "summary_large_image",
+            title: `${t("title")} | ${site("name")}`,
+            description: t("description"),
+        },
     };
 }
 
