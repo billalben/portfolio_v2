@@ -2,7 +2,7 @@ import { Locale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
 import LocaleSwitcher from "@/components/LocaleSwitcher";
-import ProjectsTable from "@/components/projects/ProjectsTable";
+import ProjectsList from "@/components/projects/ProjectsList";
 import ThemeToggle from "@/components/ThemeToggle";
 import { Link } from "@/i18n/navigation";
 
@@ -68,7 +68,7 @@ export default async function ProjectsPage({ params }: PageProps<"/[locale]/proj
                 {t("title")}
             </h1>
 
-            <ProjectsTable />
+            <ProjectsList />
         </main>
     );
 }

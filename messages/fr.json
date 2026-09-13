@@ -28,30 +28,36 @@
         "locale": "{locale, select, fr {🇫🇷  Français} en {🇬🇧  Anglais} ar {🇸🇦  Arabe} other {Autre}}"
     },
     "Projects": {
-        "project1": {
-            "name": "Projet Un",
-            "description": "Cours vidéo qui enseigne comment construire une application web avec l'API Web de Spotify. Les sujets abordés incluent les principes des API REST, les flux d'authentification des utilisateurs, Node, Express, React, Styled Components, et plus encore."
-        },
-        "project2": {
-            "name": "Projet Deux",
-            "description": "Une application web qui permet aux utilisateurs de rechercher et de visualiser des GIFs animés à partir de l'API Giphy. Les fonctionnalités incluent des suggestions de recherche, des GIFs tendance et la possibilité d'ajouter des GIFs aux favoris et de les télécharger."
-        },
-        "viewAll": "Voir tous les projets"
+        "viewAll": "Voir tous les projets",
+        "repo": "Dépôt GitHub",
+        "demo": "Démo en ligne",
+        "screenshots": "Captures d'écran",
+        "items": {
+            "knowsphere": {
+                "name": "KnowSphere",
+                "tagline": "Une plateforme d'apprentissage full-stack pour parcourir, suivre et compléter des cours en ligne — avec des certificats vérifiables.",
+                "highlights": [
+                    "Catalogue de cours avec recherche, filtres et état géré par l'URL, ainsi qu'une inscription gratuite ou payante via Stripe.",
+                    "Connexion via GitHub OAuth et code par e-mail, avec un contrôle d'accès basé sur les rôles séparant apprenants et administrateurs.",
+                    "Lecteur de leçons avec suivi de progression, quiz, discussions, avis et certificats vérifiables publiquement.",
+                    "Console d'administration avec analytique, gestion complète des cours et du programme, modération et journal d'activité auditable."
+                ]
+            },
+            "teamora": {
+                "name": "Teamora",
+                "tagline": "Une plateforme de chat d'équipe en temps réel où les équipes collaborent par canaux et fils, avec écriture et résumés assistés par IA.",
+                "highlights": [
+                    "Messagerie en temps réel avec canaux, fils de discussion, réactions emoji et présence en direct.",
+                    "Résumés de fils par IA et assistant de rédaction diffusés en continu, sans toucher aux liens ni aux blocs de code.",
+                    "API entièrement typée de bout en bout pour que le frontend et le backend restent synchronisés.",
+                    "Authentification sécurisée, contrôle d'accès au niveau de l'espace de travail, limitation de débit par paliers et suppression réversible avec annulation."
+                ]
+            }
+        }
     },
     "ProjectsPage": {
         "title": "Tous les projets",
-        "description": "Une sélection de projets que j'ai réalisés, avec les technologies utilisées et les liens.",
-        "columns": {
-            "project": "Projet",
-            "builtWith": "Technologies",
-            "link": "Lien"
-        },
-        "items": {
-            "project1": { "name": "Cours application Spotify" },
-            "project2": { "name": "Application de recherche Giphy" },
-            "project3": { "name": "Portfolio v2" }
-        },
-        "openLink": "Ouvrir {project} (s'ouvre dans un nouvel onglet)"
+        "description": "Une sélection de projets que j'ai réalisés, avec les technologies utilisées et les liens."
     },
     "Experiences": {
         "exp1": {

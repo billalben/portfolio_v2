@@ -27,30 +27,36 @@
         "locale": "{locale, select, fr {🇫🇷  French} en {🇬🇧  English} ar {🇸🇦  Arabic} other {Other}}"
     },
     "Projects": {
-        "project1": {
-            "name": "Project One",
-            "description": "Video course that teaches how to build a web app with the Spotify Web API. Topics covered include the principles of REST APIs, user auth flows, Node, Express, React, Styled Components, and more."
-        },
-        "project2": {
-            "name": "Project Two",
-            "description": "A web app that allows users to search for and view animated GIFs from the Giphy API. Features include search suggestions, trending GIFs, and the ability to favorite and download GIFs."
-        },
-        "viewAll": "View all projects"
+        "viewAll": "View all projects",
+        "repo": "Repository",
+        "demo": "Live demo",
+        "screenshots": "Screenshots",
+        "items": {
+            "knowsphere": {
+                "name": "KnowSphere",
+                "tagline": "A full-stack learning platform for browsing, enrolling in, and completing online courses — with verifiable certificates.",
+                "highlights": [
+                    "Course catalog with search, filters, and URL-driven state, plus free and Stripe-powered paid enrollment.",
+                    "GitHub OAuth and email OTP sign-in with role-based access separating learners from administrators.",
+                    "Lesson player with progress tracking, quizzes, discussions, reviews, and publicly verifiable certificates.",
+                    "Admin console with analytics, full course and curriculum management, moderation, and an auditable activity log."
+                ]
+            },
+            "teamora": {
+                "name": "Teamora",
+                "tagline": "A realtime team chat platform where teams collaborate in channels and threads, with AI-assisted writing and summaries.",
+                "highlights": [
+                    "Realtime messaging with channels, threads, emoji reactions, and live presence.",
+                    "AI thread summaries and a compose assistant that stream and leave links and code blocks untouched.",
+                    "Fully type-safe, end-to-end API so the frontend and backend stay in sync.",
+                    "Secure authentication, workspace-level access control, tiered rate limiting, and soft-delete with undo."
+                ]
+            }
+        }
     },
     "ProjectsPage": {
         "title": "All Projects",
-        "description": "A collection of projects I have built, with tech stacks and links.",
-        "columns": {
-            "project": "Project",
-            "builtWith": "Built with",
-            "link": "Link"
-        },
-        "items": {
-            "project1": { "name": "Spotify Web App Course" },
-            "project2": { "name": "Giphy Search App" },
-            "project3": { "name": "Portfolio v2" }
-        },
-        "openLink": "Open {project} (opens in a new tab)"
+        "description": "A collection of projects I have built, with tech stacks and links."
     },
     "Experiences": {
         "exp1": {

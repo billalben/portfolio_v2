@@ -1,25 +1,34 @@
-export type ProjectId = "project1" | "project2" | "project3";
+export type ProjectId = "knowsphere" | "teamora";
 
 export type ProjectEntry = {
     id: ProjectId;
-    url: string;
+    image: string;
+    screenshots?: string[];
+    repo?: string;
+    demo?: string;
     builtWith: string[];
+    featured: boolean;
 };
 
 export const PROJECT_LIST: ProjectEntry[] = [
     {
-        id: "project1",
-        url: "https://github.com/billalben/project1",
-        builtWith: ["React", "TypeScript", "Next.js", "Node.js", "Express"],
+        id: "knowsphere",
+        image: "/image.png",
+        screenshots: [],
+        repo: "https://github.com/billalben/KnowSphere",
+        demo: "https://knowsphere.billalbenz.com",
+        builtWith: ["React", "Next.js", "TypeScript", "PostgreSQL", "Node.js"],
+        featured: true,
     },
     {
-        id: "project2",
-        url: "https://github.com/billalben/project2",
-        builtWith: ["JavaScript", "CSS", "HTML"],
-    },
-    {
-        id: "project3",
-        url: "https://github.com/billalben",
-        builtWith: ["Next.js", "Tailwind CSS", "TypeScript"],
+        id: "teamora",
+        image: "/image.png",
+        screenshots: [],
+        repo: "https://github.com/billalben/teamora",
+        demo: "https://teamora.billalbenz.com",
+        builtWith: ["React", "TypeScript", "Node.js", "WebSockets", "PostgreSQL"],
+        featured: true,
     },
 ];
+
+export const FEATURED_PROJECTS = PROJECT_LIST.filter((project) => project.featured);

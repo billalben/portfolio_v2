@@ -1,26 +1,12 @@
 import { useTranslations } from "next-intl";
 
+import { FEATURED_PROJECTS } from "@/data/projects";
 import { Link } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
 
 import ProjectCard from "../cards/ProjectCard";
 import { ArrowOutwardIcon } from "../icons";
 import SectionTitle from "./SectionTitle";
-
-const PROJECTS = [
-    {
-        id: "project1",
-        image: "/image.png",
-        url: "https://github.com/billalben/project1",
-        skills: ["React", "TypeScript", "Next.js"],
-    },
-    {
-        id: "project2",
-        image: "/image.png",
-        url: "https://github.com/billalben/project2",
-        skills: ["JavaScript", "CSS", "HTML"],
-    },
-];
 
 const Projects = () => {
     const t = useTranslations("Projects");
@@ -31,15 +17,9 @@ const Projects = () => {
             <SectionTitle id="projects">{tHeader("sections.projects")}</SectionTitle>
             <div className="my-auto flex w-full flex-col gap-8">
                 <ul className="group/list flex flex-col gap-8">
-                    {PROJECTS.map((project) => (
+                    {FEATURED_PROJECTS.map((project) => (
                         <li key={project.id}>
-                            <ProjectCard
-                                title={t(`${project.id}.name`)}
-                                description={t(`${project.id}.description`)}
-                                image={project.image}
-                                link={project.url}
-                                skills={project.skills}
-                            />
+                            <ProjectCard project={project} />
                         </li>
                     ))}
                 </ul>
