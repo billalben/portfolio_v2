@@ -48,7 +48,7 @@ const Header = () => {
             },
             { href: "mailto:billalben@gmail.com", icon: <GmailIcon className="w-6 h-6" />, label: "Gmail", download: false },
             {
-                href: "/Billal_Benzazoua_CV.pdf",
+                href: "/Billal_Benzazoua_Frontend_Engineer.pdf",
                 icon: <IconFileCvFilled className="w-6 h-6 text-gray-900 dark:text-white" />,
                 label: "CV",
                 download: true,

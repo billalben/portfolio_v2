@@ -36,7 +36,7 @@ const Experience = () => {
 
                 {/* link for pdf resume */}
                 <Link
-                    href="/Billal_Benzazoua_CV.pdf"
+                    href="/Billal_Benzazoua_Frontend_Engineer.pdf"
                     download
                     target="_blank"
                     rel="noopener noreferrer"
