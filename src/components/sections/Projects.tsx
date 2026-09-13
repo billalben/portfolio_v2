@@ -3,7 +3,7 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
 
-import Card from "../Card";
+import ProjectCard from "../cards/ProjectCard";
 import { ArrowOutwardIcon } from "../icons";
 import SectionTitle from "./SectionTitle";
 
@@ -33,8 +33,7 @@ const Projects = () => {
                 <ul className="group/list flex flex-col gap-8">
                     {PROJECTS.map((project) => (
                         <li key={project.id}>
-                            <Card
-                                type="project"
+                            <ProjectCard
                                 title={t(`${project.id}.name`)}
                                 description={t(`${project.id}.description`)}
                                 image={project.image}

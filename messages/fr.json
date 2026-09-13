@@ -56,15 +56,30 @@
     "Experiences": {
         "exp1": {
             "name": "DataMasterDZ",
-            "description": "Développé et maintenu l'interface utilisateur d'un système ERP complet en utilisant React, Redux et Tailwind CSS. Collaboré avec des équipes interfonctionnelles pour concevoir et mettre en œuvre des interfaces utilisateur conviviales, garantissant une intégration transparente avec les services back-end. Axé sur l'optimisation des performances et le design réactif pour améliorer l'expérience utilisateur sur divers appareils.",
-            "date": "Octobre 2024 - Présent"
+            "description": "Ingénieur Frontend sur un système ERP moderne.",
+            "date": "Octobre 2024 - Présent",
+            "highlights": [
+                "J'ai unifié plusieurs interfaces ERP développées séparément en une base de code unique dotée d'une architecture partagée basée sur les fonctionnalités, réduisant la duplication et améliorant la cohérence entre les modules.",
+                "J'ai initié et dirigé la migration de 8 modules ERP de JavaScript vers TypeScript, améliorant la sécurité des types et la maintenabilité.",
+                "J'ai conçu et développé un système de composants réutilisables et des patterns frontend partagés pour un développement de fonctionnalités cohérent et sans duplication.",
+                "J'ai mis en place des revues de code ainsi que des tests unitaires et de bout en bout, renforçant la qualité, la maintenabilité et la confiance dans les régressions."
+            ]
         },
         "exp2": {
-            "name": "Développeur Web Freelance",
-            "description": "Travaillé avec des clients pour créer des sites Web et des applications Web personnalisés en utilisant HTML, CSS, JavaScript et des frameworks populaires comme React et Vue.js. Géré tous les aspects du processus de développement, de la consultation initiale et de la conception à la mise en production et à la maintenance. Livré des solutions de haute qualité, réactives et optimisées pour le référencement, adaptées aux besoins des clients.",
-            "date": "2020"
+            "name": "Intern2Grow",
+            "description": "J'ai effectué un stage à distance couvrant les volets UI, JavaScript et React, en prenant en charge des tâches réelles, de la conception à la livraison.",
+            "date": "Juin 2024",
+            "highlights": [
+                "UI : Conversion de maquettes Figma en pages responsives, dont un écran de connexion et une page portfolio.",
+                "JavaScript : Correction de bugs et ajout de fonctionnalités telles que la recherche avec debounce, la copie dans le presse-papiers et la sauvegarde automatique via localStorage.",
+                "React : Ajout de fonctionnalités comme les boutons de partage social et un hook useLocalStorage personnalisé."
+            ]
         },
-        "downloadResume": "Voir le CV"
+        "downloadResume": "Voir le CV",
+        "modalSoon": "Du contenu sera bientôt disponible ici."
+    },
+    "Modal": {
+        "close": "Fermer"
     },
     "Manifest": {
         "name": "Billal Benzazoua — Ingénieur Frontend"
