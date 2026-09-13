@@ -17,11 +17,10 @@
     },
     "About": {
         "title": "À Propos",
-        "p1": "Je suis un <strong>Ingénieur Front-end</strong> passionné par la création d'interfaces utilisateur accessibles et parfaites, qui allient un design réfléchi à une ingénierie robuste. Je m'épanouis à l'intersection de la créativité et du code, en concevant des expériences non seulement visuellement attrayantes mais aussi méticuleusement optimisées pour les performances et la facilité d'utilisation.",
-        "p2": "Actuellement, je travaille en tant qu'Ingénieur Front-End chez <link>DataMasterDZ</link>, où je développe un système ERP moderne visant à rationaliser les opérations commerciales.",
-        "p3": "Dans mon rôle, je me concentre sur la création d'interfaces utilisateur intuitives et sur la garantie d'une expérience utilisateur fluide à travers l'application.",
-        "p4": "Je m'engage à apprendre continuellement et à me tenir au courant des dernières tendances et des meilleures pratiques de l'industrie.",
-        "p5": "Durant mon temps libre, j'aime explorer de nouvelles technologies et travailler sur des projets personnels qui challengent mes compétences et ma créativité."
+        "p1": "Je suis un <strong>Ingénieur Frontend</strong> spécialisé dans la création d'applications web réfléchies, accessibles et maintenables avec React et TypeScript. J'attache de l'importance aux détails — des interfaces intuitives et d'un design responsive à une architecture propre, des composants réutilisables et un code fiable.",
+        "p2": "Actuellement, je travaille en tant qu'Ingénieur Frontend chez <link>DataMasterDZ</link>, où je contribue à un système ERP moderne qui rationalise les opérations commerciales. Mon travail consiste à créer des interfaces réutilisables, à améliorer l'architecture frontend, à migrer du JavaScript existant vers TypeScript et à renforcer la qualité du code par le biais de revues et de tests.",
+        "p3": "En dehors du travail, je crée des produits full-stack qui me poussent à explorer de nouvelles technologies et à dépasser le cadre du frontend. Ces projets m'ont permis d'acquérir une expérience pratique de l'authentification, du contrôle d'accès basé sur les rôles, des paiements, des fonctionnalités en temps réel, des API, des bases de données et des intégrations d'IA.",
+        "p4": "Je suis toujours en train d'apprendre, d'expérimenter et de chercher de meilleures façons de concevoir des logiciels à la fois agréables à utiliser et bien conçus."
     },
     "LocaleSwitcher": {
         "label": "Changer de langue",

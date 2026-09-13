@@ -34,8 +34,6 @@ const About = () => {
                 <p className="text-slate-700 dark:text-slate-400">{t("p3")}</p>
 
                 <p className="text-slate-700 dark:text-slate-400">{t("p4")}</p>
-
-                <p className="text-slate-700 dark:text-slate-400">{t("p5")}</p>
             </div>
         </section>
     );
