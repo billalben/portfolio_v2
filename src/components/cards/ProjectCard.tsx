@@ -3,6 +3,7 @@
 import { useState } from "react";
 
 import Image from "next/image";
+import { IconStarFilled } from "@tabler/icons-react";
 import { useTranslations } from "next-intl";
 
 import { ProjectEntry } from "@/data/projects";
@@ -38,7 +39,12 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
                 }
             >
                 <div>
-                    <h3 className="font-medium leading-tight text-slate-900 dark:text-slate-100 text-base">{title}</h3>
+                    <div className="flex items-center gap-1.5">
+                        <h3 className="font-medium leading-tight text-slate-900 dark:text-slate-100 text-base">{title}</h3>
+                        {project.badge && (
+                            <IconStarFilled aria-hidden="true" className="size-4 shrink-0 text-amber-400 dark:text-amber-300" />
+                        )}
+                    </div>
 
                     <p className="text-sm leading-normal text-slate-600 dark:text-slate-300 mt-1">
                         {t(`items.${project.id}.tagline`)}

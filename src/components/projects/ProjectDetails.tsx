@@ -1,9 +1,10 @@
 import Image from "next/image";
 
 import { IconBrandGithub, IconExternalLink } from "@tabler/icons-react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 import { ProjectEntry } from "@/data/projects";
+import { formatProjectDate } from "@/lib/utils";
 
 type ProjectDetailsProps = {
     project: ProjectEntry;
@@ -11,10 +12,15 @@ type ProjectDetailsProps = {
 
 const ProjectDetails = ({ project }: ProjectDetailsProps) => {
     const t = useTranslations("Projects");
+    const locale = useLocale();
     const highlights = t.raw(`items.${project.id}.highlights`) as string[];
 
     return (
         <div className="flex flex-col gap-4">
+            <p className="text-xs font-medium uppercase tracking-wide text-slate-400 dark:text-slate-500">
+                {formatProjectDate(project.date, locale)}
+            </p>
+
             <p>{t(`items.${project.id}.tagline`)}</p>
 
             <ul className="flex list-disc flex-col gap-1.5 ps-5 marker:text-slate-400 dark:marker:text-slate-500">

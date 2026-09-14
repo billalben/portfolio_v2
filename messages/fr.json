@@ -52,6 +52,174 @@
                     "API entièrement typée de bout en bout pour que le frontend et le backend restent synchronisés.",
                     "Authentification sécurisée, contrôle d'accès au niveau de l'espace de travail, limitation de débit par paliers et suppression réversible avec annulation."
                 ]
+            },
+            "blog-sn-next": {
+                "name": "Blog — Next.js + Sanity",
+                "tagline": "Un blog rendu côté serveur propulsé par Next.js et Sanity CMS, avec des pages statiques rapides et un studio de contenu intégré au dépôt.",
+                "highlights": [
+                    "Pages générées statiquement avec ISR, actualisant le contenu toutes les 10 minutes.",
+                    "Le studio Sanity vit dans le dépôt en tant que membre du workspace pnpm, partageant un seul lockfile.",
+                    "Requêtes GROQ typées, mode sombre et métadonnées SEO réelles par article."
+                ]
+            },
+            "git-finder": {
+                "name": "GitFinder",
+                "tagline": "Un explorateur d'utilisateurs GitHub pour parcourir les dépôts, forks, abonnés et abonnements — avec une interface mobile-first.",
+                "highlights": [
+                    "Recherche de n'importe quel utilisateur GitHub avec saisie debounced et squelettes de chargement.",
+                    "Listes de dépôts paginées avec un bouton « charger plus » et thèmes sombre/clair."
+                ]
+            },
+            "weatherio": {
+                "name": "Weatherio",
+                "tagline": "Une application météo avec conditions actuelles et prévisions à 5 jours pour les villes du monde entier, propulsée par OpenWeatherMap.",
+                "highlights": [
+                    "Points forts du jour : qualité de l'air, lever/coucher du soleil, humidité, pression, visibilité et ressenti.",
+                    "Recherche debounced avec suggestions, géolocalisation et état partageable dans l'URL.",
+                    "Clé API conservée côté serveur via les route handlers de Next.js."
+                ]
+            },
+            "react-admin-dashboard": {
+                "name": "React Admin Dashboard",
+                "tagline": "Un dashboard d'administration au thème sombre avec pages de gestion, graphiques et animations — entièrement basé sur des données fictives.",
+                "highlights": [
+                    "Pages de vue d'ensemble, produits, utilisateurs, ventes, commandes, analytique et paramètres.",
+                    "Visualisations Recharts, transitions Framer Motion et barre latérale repliable animée.",
+                    "Tableaux avec recherche, actions par ligne et notifications toast."
+                ]
+            },
+            "blog": {
+                "name": "Blog API",
+                "tagline": "Le backend d'une plateforme de blog — API REST avec authentification JWT, validation et documentation OpenAPI. Frontend en cours.",
+                "highlights": [
+                    "API REST Express sous /api/v1 avec middleware d'autorisation basé sur les rôles.",
+                    "Validation Zod avec spécification OpenAPI générée automatiquement et Swagger UI.",
+                    "Suite de tests Vitest exécutée contre une MongoDB en mémoire."
+                ]
+            },
+            "tvflix-next": {
+                "name": "Tvflix",
+                "tagline": "Un navigateur de films basé sur l'API TMDB avec découverte des tendances, meilleures notes et genres.",
+                "highlights": [
+                    "Slider héro d'accueil plus sections à venir, tendances et meilleures notes.",
+                    "Pages de détail des films avec bandes-annonces et recommandations.",
+                    "Tous les appels TMDB restent côté serveur ; la clé API n'atteint jamais le client."
+                ]
+            },
+            "stock-media-platform-next": {
+                "name": "Stock Media Platform",
+                "tagline": "Une galerie de médias stock pour parcourir photos et vidéos via l'API Pexels.",
+                "highlights": [
+                    "Flux de recherche, curation et tendances pour photos, vidéos et collections.",
+                    "Favoris persistés localement, défilement infini et grille masonry.",
+                    "Barre de filtres, pages de détail et téléchargement des médias."
+                ]
+            },
+            "pure-js-image-slider": {
+                "name": "Image Slider",
+                "tagline": "Un slider d'images minimaliste et sans dépendances, construit en JavaScript pur.",
+                "highlights": [
+                    "HTML, CSS et JavaScript purs, sans aucun framework."
+                ]
+            },
+            "music-player": {
+                "name": "Music Player",
+                "tagline": "Un lecteur de musique responsive et mobile-first avec contrôles de lecture et raccourcis clavier.",
+                "highlights": [
+                    "Lecture/pause, changement de piste, lecture aléatoire, répétition et contrôle du volume.",
+                    "Raccourcis clavier pour la lecture et les actions rapides."
+                ]
+            },
+            "nike": {
+                "name": "Nike Landing Page",
+                "tagline": "Une landing page moderne et responsive pour une marque de sport, construite avec React et Tailwind.",
+                "highlights": [
+                    "Interface contemporaine et épurée, entièrement responsive."
+                ]
+            },
+            "sneakers-ecommerce": {
+                "name": "Sneakers E-commerce",
+                "tagline": "Une boutique de sneakers sur deux pages avec sliders et animations au défilement.",
+                "highlights": [
+                    "CSS structuré selon la méthode BEM, sliders Swiper, Boxicons et animations ScrollReveal."
+                ]
+            },
+            "brainwave": {
+                "name": "Brainwave",
+                "tagline": "Une landing page axée sur l'IA avec des effets de parallaxe immersifs.",
+                "highlights": [
+                    "Effets de parallaxe via react-just-parallax et gestion du comportement de défilement."
+                ]
+            },
+            "travelia": {
+                "name": "Travelia",
+                "tagline": "Une landing page de voyage mobile-first pour mettre en valeur des destinations.",
+                "highlights": [
+                    "Mise en page élégante et propre, réalisée en HTML sémantique et JavaScript pur."
+                ]
+            },
+            "sushi": {
+                "name": "Sushi",
+                "tagline": "Une page élégante pour un restaurant de sushi avec animations au défilement.",
+                "highlights": [
+                    "Animations de défilement AOS sur un design propre et responsive."
+                ]
+            },
+            "html-css-template-three": {
+                "name": "Template Three",
+                "tagline": "Un template de site statique entièrement responsive au design moderne.",
+                "highlights": [
+                    "HTML sémantique, CSS personnalisé et icônes Font Awesome."
+                ]
+            },
+            "nftc": {
+                "name": "NFTC",
+                "tagline": "Une landing page mobile-first de marketplace NFT.",
+                "highlights": [
+                    "Design moderne et épuré avec Ionicons et compatibilité multi-navigateurs."
+                ]
+            },
+            "covid-19": {
+                "name": "COVID-19 Info",
+                "tagline": "Un site mobile-first présentant des informations sur le COVID-19.",
+                "highlights": [
+                    "Interface claire et conviviale avec Ionicons et adaptation à tous les écrans."
+                ]
+            },
+            "evara-ecommerce": {
+                "name": "Evara E-commerce",
+                "tagline": "Un site e-commerce responsive construit avec HTML, CSS et JavaScript.",
+                "highlights": [
+                    "Mise en page moderne centrée sur les produits, adaptée à toutes les tailles d'écran."
+                ]
+            },
+            "simple-cool-projects": {
+                "name": "Simple Cool Projects",
+                "tagline": "Une collection de petits projets amusants en HTML/CSS/JS.",
+                "highlights": [
+                    "Mini applications et widgets d'interface en JavaScript pur."
+                ]
+            },
+            "car": {
+                "name": "Autofix",
+                "tagline": "Un site responsive pour un service automobile, conçu mobile-first.",
+                "highlights": [
+                    "Balises sémantiques bien structurées avec un CSS organisé et maintenable."
+                ]
+            },
+            "metalink-nft": {
+                "name": "Metalink NFT",
+                "tagline": "Une landing page de collections NFT avec slider interactif et FAQ en accordéon.",
+                "highlights": [
+                    "Slider des meilleures collections, section FAQ en accordéon et en-tête révélé au défilement."
+                ]
+            },
+            "grilli-restaurant": {
+                "name": "Grilli Restaurant",
+                "tagline": "Un site de restaurant avec préchargement, slider héro et effets de parallaxe.",
+                "highlights": [
+                    "Slider héro à rotation automatique avec navigation manuelle et effets de brillance au survol."
+                ]
             }
         }
     },
