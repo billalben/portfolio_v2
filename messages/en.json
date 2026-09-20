@@ -239,21 +239,27 @@
             ],
             "details": {
                 "summary": "Frontend Engineer on DataMasterDZ's modern ERP platform. I build and maintain the interfaces that power day-to-day business operations, collaborating with designers and backend engineers to ship features across multiple ERP modules.",
-                "responsibilitiesTitle": "Responsibilities",
-                "responsibilities": [
-                    "Partner with UI/UX designers to translate Figma designs into functional, visually polished interfaces.",
-                    "Build responsive, accessible UIs with React, Tailwind CSS, MUI, and Ant Design.",
-                    "Integrate the frontend with backend APIs for efficient, seamless data flow.",
-                    "Implement new features that improve the user experience and meet client and business requirements.",
-                    "Refactor and optimize existing code for performance, maintainability, and scalability.",
-                    "Diagnose and resolve bugs across the platform."
-                ],
-                "achievementsTitle": "Key Achievements",
-                "achievements": [
-                    "Consolidated multiple independently developed ERP frontend applications into a single codebase with a shared, feature-based architecture, reducing duplication and improving consistency across modules.",
-                    "Initiated and led the migration of 8 ERP modules from JavaScript to TypeScript, introducing stronger type safety and more maintainable patterns.",
-                    "Designed a reusable component system and shared frontend patterns for consistent UI behavior and less duplication across modules.",
-                    "Introduced code reviews plus unit and end-to-end testing practices, strengthening code quality, maintainability, and regression confidence."
+                "sections": [
+                    {
+                        "title": "Responsibilities",
+                        "items": [
+                            "Partner with UI/UX designers to translate Figma designs into functional, visually polished interfaces.",
+                            "Build responsive, accessible UIs with React, Tailwind CSS, MUI, and Ant Design.",
+                            "Integrate the frontend with backend APIs for efficient, seamless data flow.",
+                            "Implement new features that improve the user experience and meet client and business requirements.",
+                            "Refactor and optimize existing code for performance, maintainability, and scalability.",
+                            "Diagnose and resolve bugs across the platform."
+                        ]
+                    },
+                    {
+                        "title": "Key Achievements",
+                        "items": [
+                            "Consolidated multiple independently developed ERP frontend applications into a single codebase with a shared, feature-based architecture, reducing duplication and improving consistency across modules.",
+                            "Initiated and led the migration of 8 ERP modules from JavaScript to TypeScript, introducing stronger type safety and more maintainable patterns.",
+                            "Designed a reusable component system and shared frontend patterns for consistent UI behavior and less duplication across modules.",
+                            "Introduced code reviews plus unit and end-to-end testing practices, strengthening code quality, maintainability, and regression confidence."
+                        ]
+                    }
                 ],
                 "stackTitle": "Tech Stack",
                 "stack": [
@@ -278,7 +284,43 @@
                 "UI: Converted Figma designs into responsive pages, including a login screen and a portfolio page.",
                 "JavaScript: Fixed bugs and implemented new features, including debounced search, clipboard copy, and localStorage auto-save.",
                 "React: Built new features such as social share buttons and a custom useLocalStorage hook."
-            ]
+            ],
+            "details": {
+                "summary": "A virtual frontend internship spanning three tracks — UI, JavaScript, and React — where I completed real tasks, from turning Figma designs into responsive pages to building interactive features.",
+                "sections": [
+                    {
+                        "title": "UI Developer",
+                        "items": [
+                            "Converted Figma designs into responsive web pages.",
+                            "Built a login screen and a simple portfolio page."
+                        ]
+                    },
+                    {
+                        "title": "JavaScript Frontend Developer",
+                        "items": [
+                            "Fixed frontend bugs and implemented new features to improve interaction.",
+                            "Implemented debounce for the search input.",
+                            "Generated alerts with SweetAlert.js.",
+                            "Added clipboard copy functionality to code samples.",
+                            "Implemented auto-save and auto-load with localStorage."
+                        ]
+                    },
+                    {
+                        "title": "React.js Developer",
+                        "items": [
+                            "Added social media share buttons for quotes.",
+                            "Introduced a quantity column for products.",
+                            "Created a custom useLocalStorage hook for markdown content and added a docs tab."
+                        ]
+                    }
+                ],
+                "stackTitle": "Tech Stack",
+                "stack": ["React", "JavaScript", "HTML", "CSS", "Figma", "SweetAlert.js", "localStorage"]
+            }
+        },
+        "links": {
+            "website": "Website",
+            "linkedin": "LinkedIn"
         },
         "downloadResume": "View Full Résumé",
         "modalSoon": "Soon there will be content here."

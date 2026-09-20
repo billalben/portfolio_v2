@@ -240,21 +240,27 @@
             ],
             "details": {
                 "summary": "Ingénieur Frontend sur la plateforme ERP moderne de DataMasterDZ. Je conçois et maintiens les interfaces qui alimentent les opérations commerciales au quotidien, en collaboration avec les designers et les ingénieurs backend pour livrer des fonctionnalités sur plusieurs modules ERP.",
-                "responsibilitiesTitle": "Responsabilités",
-                "responsibilities": [
-                    "Collaborer étroitement avec les designers UI/UX pour traduire les maquettes Figma en interfaces fonctionnelles et soignées visuellement.",
-                    "Développer des interfaces responsives et accessibles avec React, Tailwind CSS, MUI et Ant Design.",
-                    "Assurer une intégration fluide entre le frontend et le backend en consommant efficacement les APIs.",
-                    "Implémenter de nouvelles fonctionnalités améliorant l'expérience utilisateur et répondant aux exigences clients et business.",
-                    "Refactoriser et optimiser le code existant pour améliorer les performances, la maintenabilité et l'évolutivité.",
-                    "Diagnostiquer et corriger les bugs sur l'ensemble de la plateforme."
-                ],
-                "achievementsTitle": "Réalisations clés",
-                "achievements": [
-                    "J'ai unifié plusieurs applications frontend ERP développées séparément en une base de code unique dotée d'une architecture partagée basée sur les fonctionnalités, réduisant la duplication et améliorant la cohérence entre les modules.",
-                    "J'ai initié et dirigé la migration de 8 modules ERP de JavaScript vers TypeScript, introduisant une sécurité des types renforcée et des patterns plus maintenables.",
-                    "J'ai conçu un système de composants réutilisables et des patterns frontend partagés pour un comportement d'interface cohérent et moins de duplication entre les modules.",
-                    "J'ai mis en place des revues de code ainsi que des tests unitaires et de bout en bout, renforçant la qualité, la maintenabilité et la confiance dans les régressions."
+                "sections": [
+                    {
+                        "title": "Responsabilités",
+                        "items": [
+                            "Collaborer étroitement avec les designers UI/UX pour traduire les maquettes Figma en interfaces fonctionnelles et soignées visuellement.",
+                            "Développer des interfaces responsives et accessibles avec React, Tailwind CSS, MUI et Ant Design.",
+                            "Assurer une intégration fluide entre le frontend et le backend en consommant efficacement les APIs.",
+                            "Implémenter de nouvelles fonctionnalités améliorant l'expérience utilisateur et répondant aux exigences clients et business.",
+                            "Refactoriser et optimiser le code existant pour améliorer les performances, la maintenabilité et l'évolutivité.",
+                            "Diagnostiquer et corriger les bugs sur l'ensemble de la plateforme."
+                        ]
+                    },
+                    {
+                        "title": "Réalisations clés",
+                        "items": [
+                            "J'ai unifié plusieurs applications frontend ERP développées séparément en une base de code unique dotée d'une architecture partagée basée sur les fonctionnalités, réduisant la duplication et améliorant la cohérence entre les modules.",
+                            "J'ai initié et dirigé la migration de 8 modules ERP de JavaScript vers TypeScript, introduisant une sécurité des types renforcée et des patterns plus maintenables.",
+                            "J'ai conçu un système de composants réutilisables et des patterns frontend partagés pour un comportement d'interface cohérent et moins de duplication entre les modules.",
+                            "J'ai mis en place des revues de code ainsi que des tests unitaires et de bout en bout, renforçant la qualité, la maintenabilité et la confiance dans les régressions."
+                        ]
+                    }
                 ],
                 "stackTitle": "Technologies",
                 "stack": [
@@ -279,7 +285,43 @@
                 "UI : Conversion de maquettes Figma en pages responsives, dont un écran de connexion et une page portfolio.",
                 "JavaScript : Correction de bugs et ajout de fonctionnalités telles que la recherche avec debounce, la copie dans le presse-papiers et la sauvegarde automatique via localStorage.",
                 "React : Ajout de fonctionnalités comme les boutons de partage social et un hook useLocalStorage personnalisé."
-            ]
+            ],
+            "details": {
+                "summary": "Un stage virtuel de frontend couvrant trois volets — UI, JavaScript et React — durant lequel j'ai réalisé des tâches réelles, de la conversion de maquettes Figma en pages responsives à la création de fonctionnalités interactives.",
+                "sections": [
+                    {
+                        "title": "Développeur UI",
+                        "items": [
+                            "Conversion de maquettes Figma en pages web responsives.",
+                            "Développement d'un écran de connexion et d'une page portfolio simple."
+                        ]
+                    },
+                    {
+                        "title": "Développeur Frontend JavaScript",
+                        "items": [
+                            "Correction de bugs frontend et ajout de nouvelles fonctionnalités pour améliorer l'interaction.",
+                            "Mise en place du debounce pour le champ de recherche.",
+                            "Génération d'alertes avec SweetAlert.js.",
+                            "Ajout de la copie dans le presse-papiers pour les exemples de code.",
+                            "Mise en place de la sauvegarde et du chargement automatiques via localStorage."
+                        ]
+                    },
+                    {
+                        "title": "Développeur React.js",
+                        "items": [
+                            "Ajout de boutons de partage social pour les citations.",
+                            "Ajout d'une colonne de quantité pour les produits.",
+                            "Création d'un hook useLocalStorage personnalisé pour le contenu markdown et ajout d'un onglet docs."
+                        ]
+                    }
+                ],
+                "stackTitle": "Technologies",
+                "stack": ["React", "JavaScript", "HTML", "CSS", "Figma", "SweetAlert.js", "localStorage"]
+            }
+        },
+        "links": {
+            "website": "Site web",
+            "linkedin": "LinkedIn"
         },
         "downloadResume": "Voir le CV",
         "modalSoon": "Du contenu sera bientôt disponible ici."

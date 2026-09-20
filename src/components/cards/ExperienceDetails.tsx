@@ -1,43 +1,43 @@
-type ExperienceDetailsProps = {
-    summary: string;
-    responsibilitiesTitle: string;
-    responsibilities: string[];
-    achievementsTitle: string;
-    achievements: string[];
-    stackTitle: string;
-    stack: string[];
+import { IconWorld } from "@tabler/icons-react";
+
+import { cn } from "@/lib/utils";
+
+import { ArrowOutwardIcon, LinkedinIcon } from "../icons";
+
+type ExperienceSection = {
+    title: string;
+    items: string[];
 };
 
-const ExperienceDetails = ({
-    summary,
-    responsibilitiesTitle,
-    responsibilities,
-    achievementsTitle,
-    achievements,
-    stackTitle,
-    stack,
-}: ExperienceDetailsProps) => {
+type ExperienceLink = {
+    href: string;
+    label: string;
+    kind: "website" | "linkedin";
+};
+
+type ExperienceDetailsProps = {
+    summary: string;
+    sections: ExperienceSection[];
+    stackTitle: string;
+    stack: string[];
+    links: ExperienceLink[];
+};
+
+const ExperienceDetails = ({ summary, sections, stackTitle, stack, links }: ExperienceDetailsProps) => {
     return (
         <div className="flex flex-col gap-5">
             <p>{summary}</p>
 
-            <section className="flex flex-col gap-2">
-                <h3 className="text-sm font-semibold text-slate-900 dark:text-slate-100">{responsibilitiesTitle}</h3>
-                <ul className="flex list-disc flex-col gap-1.5 ps-5 marker:text-slate-400 dark:marker:text-slate-500">
-                    {responsibilities.map((item) => (
-                        <li key={item}>{item}</li>
-                    ))}
-                </ul>
-            </section>
-
-            <section className="flex flex-col gap-2">
-                <h3 className="text-sm font-semibold text-slate-900 dark:text-slate-100">{achievementsTitle}</h3>
-                <ul className="flex list-disc flex-col gap-1.5 ps-5 marker:text-slate-400 dark:marker:text-slate-500">
-                    {achievements.map((item) => (
-                        <li key={item}>{item}</li>
-                    ))}
-                </ul>
-            </section>
+            {sections.map((section) => (
+                <section key={section.title} className="flex flex-col gap-2">
+                    <h3 className="text-sm font-semibold text-slate-900 dark:text-slate-100">{section.title}</h3>
+                    <ul className="flex list-disc flex-col gap-1.5 ps-5 marker:text-slate-400 dark:marker:text-slate-500">
+                        {section.items.map((item) => (
+                            <li key={item}>{item}</li>
+                        ))}
+                    </ul>
+                </section>
+            ))}
 
             {stack.length > 0 && (
                 <section className="flex flex-col gap-2">
@@ -52,6 +52,42 @@ const ExperienceDetails = ({
                         ))}
                     </ul>
                 </section>
+            )}
+
+            {links.length > 0 && (
+                <ul className="flex flex-wrap items-center gap-x-4 gap-y-2">
+                    {links.map((link) => (
+                        <li key={link.href}>
+                            <a
+                                href={link.href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label={link.label}
+                                className="group/link inline-flex items-center gap-1.5 text-sm font-medium text-slate-700 transition-colors hover:text-teal-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 dark:text-slate-300 dark:hover:text-teal-300 dark:focus-visible:ring-teal-400"
+                            >
+                                {link.kind === "linkedin" ? (
+                                    <LinkedinIcon className="size-4 shrink-0" aria-hidden="true" />
+                                ) : (
+                                    <IconWorld className="size-4 shrink-0" aria-hidden="true" />
+                                )}
+
+                                <span className="underline-offset-2 group-hover/link:underline">{link.label}</span>
+
+                                <ArrowOutwardIcon
+                                    aria-hidden="true"
+                                    className={cn(
+                                        "inline-block size-3.5 shrink-0 transition-transform motion-reduce:transition-none",
+                                        "group-hover/link:-translate-y-0.5 group-hover/link:translate-x-0.5",
+                                        "group-focus-visible/link:-translate-y-0.5 group-focus-visible/link:translate-x-0.5",
+                                        "rtl:scale-x-[-1]",
+                                        "rtl:group-hover/link:-translate-x-0.5",
+                                        "rtl:group-focus-visible/link:-translate-x-0.5",
+                                    )}
+                                />
+                            </a>
+                        </li>
+                    ))}
+                </ul>
             )}
         </div>
     );

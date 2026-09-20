@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 
+import { EXPERIENCE_LINKS } from "@/data/experiences";
 import { cn } from "@/lib/utils";
 
 import ExperienceCard from "../cards/ExperienceCard";
@@ -33,14 +34,13 @@ const Experience = () => {
                                     t.has(`${id}.details`) ? (
                                         <ExperienceDetails
                                             summary={t(`${id}.details.summary`)}
-                                            responsibilitiesTitle={t(`${id}.details.responsibilitiesTitle`)}
-                                            responsibilities={
-                                                t.raw(`${id}.details.responsibilities`) as string[]
-                                            }
-                                            achievementsTitle={t(`${id}.details.achievementsTitle`)}
-                                            achievements={t.raw(`${id}.details.achievements`) as string[]}
+                                            sections={t.raw(`${id}.details.sections`) as { title: string; items: string[] }[]}
                                             stackTitle={t(`${id}.details.stackTitle`)}
                                             stack={t.raw(`${id}.details.stack`) as string[]}
+                                            links={EXPERIENCE_LINKS[id].map((link) => ({
+                                                ...link,
+                                                label: t(`links.${link.kind}`),
+                                            }))}
                                         />
                                     ) : (
                                         <p>{t("modalSoon")}</p>
