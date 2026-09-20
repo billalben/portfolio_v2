@@ -4,6 +4,7 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 
 import ExperienceCard from "../cards/ExperienceCard";
+import ExperienceDetails from "../cards/ExperienceDetails";
 import { ArrowOutwardIcon } from "../icons";
 import SectionTitle from "./SectionTitle";
 
@@ -28,7 +29,23 @@ const Experience = () => {
                                 date={t(`${id}.date`)}
                                 highlights={t.raw(`${id}.highlights`) as string[]}
                                 closeLabel={tModal("close")}
-                                modalContent={<p>{t("modalSoon")}</p>}
+                                modalContent={
+                                    t.has(`${id}.details`) ? (
+                                        <ExperienceDetails
+                                            summary={t(`${id}.details.summary`)}
+                                            responsibilitiesTitle={t(`${id}.details.responsibilitiesTitle`)}
+                                            responsibilities={
+                                                t.raw(`${id}.details.responsibilities`) as string[]
+                                            }
+                                            achievementsTitle={t(`${id}.details.achievementsTitle`)}
+                                            achievements={t.raw(`${id}.details.achievements`) as string[]}
+                                            stackTitle={t(`${id}.details.stackTitle`)}
+                                            stack={t.raw(`${id}.details.stack`) as string[]}
+                                        />
+                                    ) : (
+                                        <p>{t("modalSoon")}</p>
+                                    )
+                                }
                             />
                         </li>
                     ))}

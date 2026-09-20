@@ -236,7 +236,39 @@
                 "Initiated and led the migration of 8 ERP modules from JavaScript to TypeScript, improving type safety and maintainability.",
                 "Built a reusable component system and shared frontend patterns for consistent, low-duplication feature development.",
                 "Introduced code reviews plus unit and end-to-end testing, strengthening quality, maintainability, and regression confidence."
-            ]
+            ],
+            "details": {
+                "summary": "Frontend Engineer on DataMasterDZ's modern ERP platform. I build and maintain the interfaces that power day-to-day business operations, collaborating with designers and backend engineers to ship features across multiple ERP modules.",
+                "responsibilitiesTitle": "Responsibilities",
+                "responsibilities": [
+                    "Partner with UI/UX designers to translate Figma designs into functional, visually polished interfaces.",
+                    "Build responsive, accessible UIs with React, Tailwind CSS, MUI, and Ant Design.",
+                    "Integrate the frontend with backend APIs for efficient, seamless data flow.",
+                    "Implement new features that improve the user experience and meet client and business requirements.",
+                    "Refactor and optimize existing code for performance, maintainability, and scalability.",
+                    "Diagnose and resolve bugs across the platform."
+                ],
+                "achievementsTitle": "Key Achievements",
+                "achievements": [
+                    "Consolidated multiple independently developed ERP frontend applications into a single codebase with a shared, feature-based architecture, reducing duplication and improving consistency across modules.",
+                    "Initiated and led the migration of 8 ERP modules from JavaScript to TypeScript, introducing stronger type safety and more maintainable patterns.",
+                    "Designed a reusable component system and shared frontend patterns for consistent UI behavior and less duplication across modules.",
+                    "Introduced code reviews plus unit and end-to-end testing practices, strengthening code quality, maintainability, and regression confidence."
+                ],
+                "stackTitle": "Tech Stack",
+                "stack": [
+                    "React",
+                    "TypeScript",
+                    "JavaScript",
+                    "Tailwind CSS",
+                    "MUI",
+                    "Ant Design",
+                    "Figma",
+                    "REST APIs",
+                    "Unit Testing",
+                    "E2E Testing"
+                ]
+            }
         },
         "exp2": {
             "name": "Intern2Grow",

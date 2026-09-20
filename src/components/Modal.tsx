@@ -51,7 +51,7 @@ const Modal = ({ open, onClose, title, closeLabel, children }: ModalProps) => {
                 }
             }}
             className={cn(
-                "modal-dialog m-auto w-[calc(100%-2rem)] max-w-lg rounded-xl border border-slate-200 bg-white p-0 text-slate-900 shadow-xl",
+                "modal-dialog m-auto w-[calc(100%-2rem)] max-w-5xl rounded-xl border border-slate-200 bg-white p-0 text-slate-900 shadow-xl",
                 "dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100",
                 "open:animate-[modal-in_150ms_ease-out] motion-reduce:animate-none",
             )}
