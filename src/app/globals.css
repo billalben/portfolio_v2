@@ -2,6 +2,12 @@
 
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
+@theme {
+    --color-accent-orange: #f0a25c;
+    --color-accent-green: #a8c46a;
+    --color-accent-blue: #6aa6c8;
+}
+
 /* Tailwind doesn't provide animation-play-state by default */
 @layer utilities {
     .paused {
@@ -14,14 +20,28 @@
     animation-play-state: paused !important;
 }
 
+/* Pause both skills marquee rows when hovering the skills area */
+.skills-marquee:hover ul {
+    animation-play-state: paused !important;
+}
+
 * {
     box-sizing: border-box;
 }
 
 /* Optional: set base styles */
 body {
-    font-family: var(--font-inter), sans-serif;
+    font-family: var(--font-familjen), var(--font-ibm-plex-arabic), sans-serif;
     font-size: 1rem;
+}
+
+/* Arabic: taller line-height and no letter-spacing (overrides tracking-* utilities) */
+html[lang="ar"] body {
+    line-height: 1.9;
+}
+
+html[lang="ar"] * {
+    letter-spacing: normal;
 }
 
 @keyframes scroll {
@@ -39,6 +59,22 @@ body {
     }
     to {
         transform: translateX(0);
+    }
+}
+
+/* Skills marquee rows */
+.marquee-right {
+    animation: scroll-right 40s linear infinite;
+}
+
+.marquee-left {
+    animation: scroll 46s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .marquee-right,
+    .marquee-left {
+        animation: none;
     }
 }
 

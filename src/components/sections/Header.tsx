@@ -2,12 +2,12 @@
 
 import { useEffect, useMemo, useState } from "react";
 
-import { IconFileCvFilled } from "@tabler/icons-react";
 import { useTranslations } from "next-intl";
 
-import { GithubIcon, GmailIcon, LinkedinIcon } from "../icons";
+import { CvIcon, GithubIcon, GmailIcon, LinkedinIcon } from "../icons";
 import LocaleSwitcher from "../LocaleSwitcher";
 import ThemeToggle from "../ThemeToggle";
+import TitleInspect from "./TitleInspect";
 
 type TSection = "about" | "experience" | "skills" | "projects";
 
@@ -36,20 +36,33 @@ const Header = () => {
         () => [
             {
                 href: "https://github.com/billalben",
-                icon: <GithubIcon className="w-6 h-6 text-slate-900 dark:text-white" />,
+                icon: (
+                    <GithubIcon className="w-6 h-6 text-slate-500 transition-colors duration-200 hover:text-[var(--brand)] dark:text-slate-400 dark:hover:text-[var(--brand-dark)]" />
+                ),
                 label: "GitHub",
                 download: false,
             },
             {
                 href: "https://www.linkedin.com/in/billal-benzazoua/",
-                icon: <LinkedinIcon className="w-6 h-6" />,
+                icon: (
+                    <LinkedinIcon className="w-6 h-6 text-slate-500 transition-colors duration-200 hover:text-[var(--brand)] dark:text-slate-400 dark:hover:text-[var(--brand-dark)]" />
+                ),
                 label: "LinkedIn",
                 download: false,
             },
-            { href: "mailto:billalben@gmail.com", icon: <GmailIcon className="w-6 h-6" />, label: "Gmail", download: false },
+            {
+                href: "mailto:billalben@gmail.com",
+                icon: (
+                    <GmailIcon className="w-6 h-6 text-slate-500 transition-colors duration-200 hover:text-[var(--brand)] dark:text-slate-400 dark:hover:text-[var(--brand-dark)]" />
+                ),
+                label: "Gmail",
+                download: false,
+            },
             {
                 href: "/Billal_Benzazoua_Frontend_Engineer.pdf",
-                icon: <IconFileCvFilled className="w-6 h-6 text-gray-900 dark:text-white" />,
+                icon: (
+                    <CvIcon className="w-6 h-6 text-slate-500 transition-colors duration-200 hover:text-[var(--brand)] dark:text-slate-400 dark:hover:text-[var(--brand-dark)]" />
+                ),
                 label: "CV",
                 download: true,
             },
@@ -86,7 +99,9 @@ const Header = () => {
             </div>
 
             <div className="mt-8 flex flex-col gap-2">
-                <h1 className="text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-200 sm:text-5xl">{t("name")}</h1>
+                <TitleInspect className="text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-200 sm:text-5xl">
+                    {t("name")}
+                </TitleInspect>
                 <h2 className="text-lg font-semibold tracking-tight text-slate-700 dark:text-slate-200 sm:text-xl">{t("title")}</h2>
                 <p className="max-w-xs leading-normal text-slate-600 dark:text-slate-400">{t("description")}</p>
             </div>

@@ -37,8 +37,8 @@ export default function LocaleSwitcherSelect({ children, value, label }: Props) 
                 id="locale-select"
                 className={clsx(
                     "appearance-none rounded-md border border-gray-300 bg-white px-2 py-1 text-sm font-medium text-gray-900 shadow-sm",
-                    "focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500",
-                    "dark:bg-gray-800 dark:border-gray-700 dark:text-gray-100 dark:focus:border-indigo-400 dark:focus:ring-indigo-400",
+                    "focus:border-accent-blue focus:ring-2 focus:ring-accent-blue",
+                    "dark:bg-gray-800 dark:border-gray-700 dark:text-gray-100",
                     "cursor-pointer transition",
                     isPending && "opacity-60",
                 )}

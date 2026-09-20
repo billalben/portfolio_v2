@@ -82,7 +82,7 @@ const Modal = ({ open, onClose, title, closeLabel, size = "md", className, child
                         type="button"
                         onClick={() => dialogRef.current?.close()}
                         aria-label={closeLabel}
-                        className="shrink-0 rounded-full p-1 text-slate-500 transition-colors hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 dark:text-slate-400 dark:hover:bg-slate-800 dark:hover:text-slate-100 dark:focus-visible:ring-teal-400"
+                        className="shrink-0 rounded-full p-1 text-slate-500 transition-colors hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-blue dark:text-slate-400 dark:hover:bg-slate-800 dark:hover:text-slate-100"
                     >
                         <IconX className="size-5" aria-hidden="true" />
                     </button>

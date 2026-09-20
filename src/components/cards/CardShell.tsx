@@ -24,7 +24,7 @@ const CardShell = ({ media, children, onClick, actionLabel }: CardShellProps) =>
                     onClick={onClick}
                     aria-label={actionLabel}
                     aria-haspopup="dialog"
-                    className="absolute -inset-x-4 -inset-y-4 z-20 cursor-pointer rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 dark:focus-visible:ring-teal-400 lg:-inset-x-6"
+                    className="absolute -inset-x-4 -inset-y-4 z-20 cursor-pointer rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-blue lg:-inset-x-6"
                 >
                     <IconPlus
                         aria-hidden="true"

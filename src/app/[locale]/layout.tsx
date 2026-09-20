@@ -1,15 +1,21 @@
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { hasLocale, Locale, NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
-import { Inter } from "next/font/google";
+import { Familjen_Grotesk, IBM_Plex_Sans_Arabic } from "next/font/google";
 import { notFound } from "next/navigation";
 
 import BackgroundGlow from "@/components/BackgroundGlow";
 import { routing } from "@/i18n/routing";
 
-const inter = Inter({
-    variable: "--font-inter",
+const familjenGrotesk = Familjen_Grotesk({
+    variable: "--font-familjen",
     subsets: ["latin"],
+});
+
+const ibmPlexSansArabic = IBM_Plex_Sans_Arabic({
+    variable: "--font-ibm-plex-arabic",
+    subsets: ["arabic", "latin"],
+    weight: ["400", "500", "600", "700"],
 });
 
 const SITE_URL = "https://www.billalbenz.com";
@@ -106,10 +112,7 @@ export default async function RootLayout({ children, params }: LayoutProps<"/[lo
             "@type": "Organization",
             name: "DataMasterDZ",
         },
-        sameAs: [
-            "https://github.com/billalben",
-            "https://www.linkedin.com/in/billal-benzazoua/",
-        ],
+        sameAs: ["https://github.com/billalben", "https://www.linkedin.com/in/billal-benzazoua/"],
         knowsAbout: [
             "React",
             "Next.js",
@@ -133,17 +136,16 @@ export default async function RootLayout({ children, params }: LayoutProps<"/[lo
             data-scroll-behavior="smooth"
             className="scroll-smooth lg:snap-y lg:snap-proximity"
         >
-            <body className={`${inter.variable} antialiased bg-slate-100 dark:bg-slate-900 leading-relaxed relative`}>
+            <body
+                className={`${familjenGrotesk.variable} ${ibmPlexSansArabic.variable} antialiased bg-slate-100 dark:bg-slate-900 leading-relaxed relative`}
+            >
                 <BackgroundGlow />
                 <div className="mx-auto min-h-screen max-w-7xl px-6 py-12 font-sans md:px-12 md:py-16 lg:py-0">
                     <NextIntlClientProvider locale={locale} messages={messages}>
                         {children}
                     </NextIntlClientProvider>
                 </div>
-                <script
-                    type="application/ld+json"
-                    dangerouslySetInnerHTML={{ __html: JSON.stringify(personStructuredData) }}
-                />
+                <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personStructuredData) }} />
             </body>
 
             <GoogleAnalytics gaId="G-CGT7K6SW93" />

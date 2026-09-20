@@ -56,7 +56,7 @@ export default async function ProjectsPage({ params }: PageProps<"/[locale]/proj
 
             <Link
                 href="/"
-                className="group mb-8 inline-flex items-center gap-2 text-sm font-medium text-teal-600 transition hover:text-teal-500 dark:text-teal-400 dark:hover:text-teal-300"
+                className="group mb-8 inline-flex items-center gap-2 text-sm font-medium text-accent-blue transition hover:text-accent-blue/80"
             >
                 <span aria-hidden className="transition group-hover:-translate-x-0.5 rtl:rotate-180 rtl:group-hover:translate-x-0.5">
                     ←
@@ -64,9 +64,7 @@ export default async function ProjectsPage({ params }: PageProps<"/[locale]/proj
                 {tHeader("name")}
             </Link>
 
-            <h1 className="mb-10 text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-100 sm:text-5xl">
-                {t("title")}
-            </h1>
+            <h1 className="mb-10 text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-100 sm:text-5xl">{t("title")}</h1>
 
             <ProjectsList />
         </main>

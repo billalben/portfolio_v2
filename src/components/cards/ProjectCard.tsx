@@ -41,9 +41,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
                 <div>
                     <div className="flex items-center gap-1.5">
                         <h3 className="font-medium leading-tight text-slate-900 dark:text-slate-100 text-base">{title}</h3>
-                        {project.badge && (
-                            <IconStarFilled aria-hidden="true" className="size-4 shrink-0 text-amber-400 dark:text-amber-300" />
-                        )}
+                        {project.badge && <IconStarFilled aria-hidden="true" className="size-4 shrink-0 text-accent-orange" />}
                     </div>
 
                     <p className="text-sm leading-normal text-slate-600 dark:text-slate-300 mt-1">{t(`items.${project.id}.tagline`)}</p>
@@ -53,7 +51,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
                     <ul className="mt-2 flex flex-wrap gap-2">
                         {project.builtWith.map((skill) => (
                             <li key={skill}>
-                                <div className="flex items-center rounded-full bg-teal-50 dark:bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-700 dark:text-teal-300 border border-teal-200/50 dark:border-teal-400/20">
+                                <div className="flex items-center rounded-full bg-accent-green/10 px-3 py-1 text-xs font-medium leading-5 text-slate-700 border border-accent-green/50 dark:border-accent-green/30 dark:text-slate-200">
                                     {skill}
                                 </div>
                             </li>

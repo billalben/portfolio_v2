@@ -1,7 +1,6 @@
-import Image from "next/image";
-
 import { IconBrandGithub, IconExternalLink } from "@tabler/icons-react";
 import { useLocale, useTranslations } from "next-intl";
+import Image from "next/image";
 
 import { ProjectEntry } from "@/data/projects";
 import { formatProjectDate } from "@/lib/utils";
@@ -33,7 +32,7 @@ const ProjectDetails = ({ project }: ProjectDetailsProps) => {
                 <ul className="flex flex-wrap gap-2">
                     {project.builtWith.map((skill) => (
                         <li key={skill}>
-                            <span className="inline-flex items-center rounded-full border border-teal-200/50 bg-teal-50 px-3 py-1 text-xs font-medium leading-5 text-teal-700 dark:border-teal-400/20 dark:bg-teal-400/10 dark:text-teal-300">
+                            <span className="inline-flex items-center rounded-full border border-accent-green/50 bg-accent-green/10 px-3 py-1 text-xs font-medium leading-5 text-slate-700 dark:border-accent-green/30 dark:text-slate-200">
                                 {skill}
                             </span>
                         </li>
@@ -48,7 +47,7 @@ const ProjectDetails = ({ project }: ProjectDetailsProps) => {
                             href={project.repo}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-1.5 rounded-md bg-slate-900 px-3 py-1.5 text-sm font-medium text-white transition-colors hover:bg-slate-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-slate-300"
+                            className="inline-flex items-center gap-1.5 rounded-md bg-slate-900 px-3 py-1.5 text-sm font-medium text-white transition-colors hover:bg-slate-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-blue dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-slate-300"
                         >
                             <IconBrandGithub className="size-4" aria-hidden="true" />
                             {t("repo")}
@@ -60,7 +59,7 @@ const ProjectDetails = ({ project }: ProjectDetailsProps) => {
                             href={project.demo}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-1.5 rounded-md bg-teal-600 px-3 py-1.5 text-sm font-medium text-white transition-colors hover:bg-teal-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 dark:bg-teal-500 dark:hover:bg-teal-400"
+                            className="inline-flex items-center gap-1.5 rounded-md bg-accent-blue px-3 py-1.5 text-sm font-medium text-slate-900 transition-colors hover:bg-accent-blue/85 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-blue"
                         >
                             <IconExternalLink className="size-4" aria-hidden="true" />
                             {t("demo")}

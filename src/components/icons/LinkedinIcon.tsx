@@ -1,9 +1,9 @@
-import type { SVGProps } from "react";
+import type { CSSProperties, SVGProps } from "react";
 
 import { IconBrandLinkedinFilled } from "@tabler/icons-react";
 
-export function LinkedinIcon(props: SVGProps<SVGSVGElement>) {
-    return <IconBrandLinkedinFilled color="#0A66C2" {...props} />;
+export function LinkedinIcon({ style, ...props }: SVGProps<SVGSVGElement>) {
+    return <IconBrandLinkedinFilled style={{ "--brand": "#0a66c2", "--brand-dark": "#5aa9e6", ...style } as CSSProperties} {...props} />;
 }
 
 export default LinkedinIcon;

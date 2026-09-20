@@ -8,6 +8,7 @@
         "name": "Billal Benzazoua",
         "title": "Ingénieur Frontend",
         "description": "Je conçois des expériences numériques accessibles et pixel-perfect pour le web.",
+        "inspectLayout": "Inspecter la mise en page",
         "sections": {
             "about": "À Propos",
             "experience": "Expérience",

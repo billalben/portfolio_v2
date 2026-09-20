@@ -1,9 +1,11 @@
 import type { SVGProps } from "react";
 
-import { IconMailFilled } from "@tabler/icons-react";
+import { siGmail } from "simple-icons";
+
+import BrandIcon from "./BrandIcon";
 
 export function GmailIcon(props: SVGProps<SVGSVGElement>) {
-    return <IconMailFilled color="#EA4335" {...props} />;
+    return <BrandIcon icon={siGmail} {...props} />;
 }
 
 export default GmailIcon;

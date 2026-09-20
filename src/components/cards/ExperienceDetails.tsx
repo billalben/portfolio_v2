@@ -45,7 +45,7 @@ const ExperienceDetails = ({ summary, sections, stackTitle, stack, links }: Expe
                     <ul className="flex flex-wrap gap-2">
                         {stack.map((skill) => (
                             <li key={skill}>
-                                <span className="inline-flex items-center rounded-full border border-teal-200/50 bg-teal-50 px-3 py-1 text-xs font-medium leading-5 text-teal-700 dark:border-teal-400/20 dark:bg-teal-400/10 dark:text-teal-300">
+                                <span className="inline-flex items-center rounded-full border border-accent-green/50 bg-accent-green/10 px-3 py-1 text-xs font-medium leading-5 text-slate-700 dark:border-accent-green/30 dark:text-slate-200">
                                     {skill}
                                 </span>
                             </li>
@@ -63,7 +63,7 @@ const ExperienceDetails = ({ summary, sections, stackTitle, stack, links }: Expe
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label={link.label}
-                                className="group/link inline-flex items-center gap-1.5 text-sm font-medium text-slate-700 transition-colors hover:text-teal-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 dark:text-slate-300 dark:hover:text-teal-300 dark:focus-visible:ring-teal-400"
+                                className="group/link inline-flex items-center gap-1.5 text-sm font-medium text-slate-700 transition-colors hover:text-accent-blue focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-blue dark:text-slate-300 dark:hover:text-accent-blue"
                             >
                                 {link.kind === "linkedin" ? (
                                     <LinkedinIcon className="size-4 shrink-0" aria-hidden="true" />

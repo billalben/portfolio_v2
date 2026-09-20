@@ -6,8 +6,9 @@
     },
     "Header": {
         "name": "Billal Benzazoua",
-        "title": "Frontend engineer",
+        "title": "Frontend Engineer",
         "description": "I build accessible, pixel-perfect digital experiences for the web.",
+        "inspectLayout": "Inspect layout",
         "sections": {
             "about": "About",
             "experience": "Experience",
@@ -117,9 +118,7 @@
             "pure-js-image-slider": {
                 "name": "Image Slider",
                 "tagline": "A minimal, dependency-free image slider built with plain JavaScript.",
-                "highlights": [
-                    "Pure HTML, CSS, and JavaScript with no frameworks."
-                ]
+                "highlights": ["Pure HTML, CSS, and JavaScript with no frameworks."]
             },
             "music-player": {
                 "name": "Music Player",
@@ -132,93 +131,67 @@
             "nike": {
                 "name": "Nike Landing Page",
                 "tagline": "A modern, responsive landing page for a sports brand, built with React and Tailwind.",
-                "highlights": [
-                    "Clean, contemporary UI with fully responsive layouts."
-                ]
+                "highlights": ["Clean, contemporary UI with fully responsive layouts."]
             },
             "sneakers-ecommerce": {
                 "name": "Sneakers E-commerce",
                 "tagline": "A two-page sneaker storefront with sliders and scroll animations.",
-                "highlights": [
-                    "BEM-structured CSS with Swiper sliders, Boxicons, and ScrollReveal animations."
-                ]
+                "highlights": ["BEM-structured CSS with Swiper sliders, Boxicons, and ScrollReveal animations."]
             },
             "brainwave": {
                 "name": "Brainwave",
                 "tagline": "An AI-focused landing page with immersive parallax effects.",
-                "highlights": [
-                    "Parallax effects via react-just-parallax and scroll behavior control."
-                ]
+                "highlights": ["Parallax effects via react-just-parallax and scroll behavior control."]
             },
             "travelia": {
                 "name": "Travelia",
                 "tagline": "A mobile-first travel landing page for showcasing destinations.",
-                "highlights": [
-                    "Clean, elegant layout built with semantic HTML and vanilla JavaScript."
-                ]
+                "highlights": ["Clean, elegant layout built with semantic HTML and vanilla JavaScript."]
             },
             "sushi": {
                 "name": "Sushi",
                 "tagline": "An elegant sushi restaurant page with scroll-reveal animations.",
-                "highlights": [
-                    "AOS scroll animations over a clean, responsive design."
-                ]
+                "highlights": ["AOS scroll animations over a clean, responsive design."]
             },
             "html-css-template-three": {
                 "name": "Template Three",
                 "tagline": "A fully responsive static website template with a modern design.",
-                "highlights": [
-                    "Built with semantic HTML, custom CSS, and Font Awesome icons."
-                ]
+                "highlights": ["Built with semantic HTML, custom CSS, and Font Awesome icons."]
             },
             "nftc": {
                 "name": "NFTC",
                 "tagline": "A mobile-first NFT marketplace landing page.",
-                "highlights": [
-                    "Clean, modern design with Ionicons and cross-browser compatibility."
-                ]
+                "highlights": ["Clean, modern design with Ionicons and cross-browser compatibility."]
             },
             "covid-19": {
                 "name": "COVID-19 Info",
                 "tagline": "A mobile-first website presenting COVID-19 information.",
-                "highlights": [
-                    "Clear, user-friendly layout with Ionicons and full responsiveness."
-                ]
+                "highlights": ["Clear, user-friendly layout with Ionicons and full responsiveness."]
             },
             "evara-ecommerce": {
                 "name": "Evara E-commerce",
                 "tagline": "A responsive e-commerce website built with HTML, CSS, and JavaScript.",
-                "highlights": [
-                    "Modern, product-focused layout adapting to all screen sizes."
-                ]
+                "highlights": ["Modern, product-focused layout adapting to all screen sizes."]
             },
             "simple-cool-projects": {
                 "name": "Simple Cool Projects",
                 "tagline": "A collection of small, fun HTML/CSS/JS experiments.",
-                "highlights": [
-                    "Mini apps and UI widgets in vanilla JavaScript."
-                ]
+                "highlights": ["Mini apps and UI widgets in vanilla JavaScript."]
             },
             "car": {
                 "name": "Autofix",
                 "tagline": "A responsive car service website built with a mobile-first approach.",
-                "highlights": [
-                    "Well-structured semantic markup with organized, maintainable CSS."
-                ]
+                "highlights": ["Well-structured semantic markup with organized, maintainable CSS."]
             },
             "metalink-nft": {
                 "name": "Metalink NFT",
                 "tagline": "An NFT collections landing page with an interactive slider and accordion FAQ.",
-                "highlights": [
-                    "Top-collections slider, accordion Q&A, and a header revealed on scroll."
-                ]
+                "highlights": ["Top-collections slider, accordion Q&A, and a header revealed on scroll."]
             },
             "grilli-restaurant": {
                 "name": "Grilli Restaurant",
                 "tagline": "A restaurant website with a preloader, hero slider, and parallax effects.",
-                "highlights": [
-                    "Auto-rotating hero slider with manual navigation and shine hover effects."
-                ]
+                "highlights": ["Auto-rotating hero slider with manual navigation and shine hover effects."]
             }
         }
     },
@@ -290,10 +263,7 @@
                 "sections": [
                     {
                         "title": "UI Developer",
-                        "items": [
-                            "Converted Figma designs into responsive web pages.",
-                            "Built a login screen and a simple portfolio page."
-                        ]
+                        "items": ["Converted Figma designs into responsive web pages.", "Built a login screen and a simple portfolio page."]
                     },
                     {
                         "title": "JavaScript Frontend Developer",

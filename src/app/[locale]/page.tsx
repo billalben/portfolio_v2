@@ -11,7 +11,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
     setRequestLocale(locale);
 
     return (
-        <div className="lg:flex lg:justify-between lg:gap-4">
+        <div className="lg:flex lg:justify-between lg:gap-8">
             <Header />
 
             <main className="relative lg:w-[60%] flex flex-col">

@@ -23,7 +23,7 @@ const About = () => {
                                 href="https://www.linkedin.com/company/datamasterdz"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="underline text-blue-600 dark:text-blue-400"
+                                className="underline text-accent-blue"
                             >
                                 {chunks}
                             </a>
