@@ -39,7 +39,7 @@ const ExperienceCard = ({ title, date, description, highlights, closeLabel, moda
                 )}
             </CardShell>
 
-            <Modal open={open} onClose={() => setOpen(false)} title={title} closeLabel={closeLabel}>
+            <Modal open={open} onClose={() => setOpen(false)} title={title} closeLabel={closeLabel} size="xl">
                 {modalContent}
             </Modal>
         </>

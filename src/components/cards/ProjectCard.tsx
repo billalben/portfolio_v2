@@ -2,9 +2,9 @@
 
 import { useState } from "react";
 
-import Image from "next/image";
 import { IconStarFilled } from "@tabler/icons-react";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 import { ProjectEntry } from "@/data/projects";
 
@@ -46,9 +46,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
                         )}
                     </div>
 
-                    <p className="text-sm leading-normal text-slate-600 dark:text-slate-300 mt-1">
-                        {t(`items.${project.id}.tagline`)}
-                    </p>
+                    <p className="text-sm leading-normal text-slate-600 dark:text-slate-300 mt-1">{t(`items.${project.id}.tagline`)}</p>
                 </div>
 
                 {project.builtWith.length > 0 && (
@@ -64,7 +62,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
                 )}
             </CardShell>
 
-            <Modal open={open} onClose={() => setOpen(false)} title={title} closeLabel={tModal("close")}>
+            <Modal open={open} onClose={() => setOpen(false)} title={title} closeLabel={tModal("close")} size="sm">
                 <ProjectDetails project={project} />
             </Modal>
         </>

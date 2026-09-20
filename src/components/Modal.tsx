@@ -6,15 +6,26 @@ import { IconX } from "@tabler/icons-react";
 
 import { cn } from "@/lib/utils";
 
+type ModalSize = "sm" | "md" | "lg" | "xl";
+
+const MODAL_SIZE: Record<ModalSize, string> = {
+    sm: "max-w-md",
+    md: "max-w-lg",
+    lg: "max-w-2xl",
+    xl: "max-w-5xl",
+};
+
 type ModalProps = {
     open: boolean;
     onClose: () => void;
     title?: string;
     closeLabel: string;
+    size?: ModalSize;
+    className?: string;
     children: React.ReactNode;
 };
 
-const Modal = ({ open, onClose, title, closeLabel, children }: ModalProps) => {
+const Modal = ({ open, onClose, title, closeLabel, size = "md", className, children }: ModalProps) => {
     const dialogRef = useRef<HTMLDialogElement>(null);
     const titleId = useId();
 
@@ -51,9 +62,11 @@ const Modal = ({ open, onClose, title, closeLabel, children }: ModalProps) => {
                 }
             }}
             className={cn(
-                "modal-dialog m-auto w-[calc(100%-2rem)] max-w-5xl rounded-xl border border-slate-200 bg-white p-0 text-slate-900 shadow-xl",
+                "modal-dialog m-auto w-[calc(100%-2rem)] rounded-xl border border-slate-200 bg-white p-0 text-slate-900 shadow-xl",
+                MODAL_SIZE[size],
                 "dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100",
                 "open:animate-[modal-in_150ms_ease-out] motion-reduce:animate-none",
+                className,
             )}
         >
             <div className="flex flex-col gap-4 p-6">
