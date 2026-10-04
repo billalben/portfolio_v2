@@ -86,6 +86,17 @@
                     "Interactive OpenStreetMap previews, dark mode, and toast notifications after key actions."
                 ]
             },
+            "inktale-blog": {
+                "name": "Inktale",
+                "tagline": "A fully responsive blog platform built with Express, MongoDB, and EJS — with session-based auth, Markdown authoring, and a writer dashboard.",
+                "highlights": [
+                    "Mobile-first, fully responsive design with user registration and session-based authentication.",
+                    "Full blog CRUD with banner uploads to Cloudinary and Markdown content rendered with syntax highlighting.",
+                    "Writer dashboard tracking total visits, reactions, and published articles, with edit and delete controls.",
+                    "Likes and bookmarks on every post, plus a dedicated reading-list page to manage saved blogs.",
+                    "Settings for profile photo, name, username, email, bio, password, and account deletion, with per-IP rate limiting and gzip/brotli compression."
+                ]
+            },
             "blog-sn-next": {
                 "name": "Blog — Next.js + Sanity",
                 "tagline": "A server-rendered blog powered by Next.js and Sanity CMS, with fast static pages and an in-repo content studio.",

@@ -4,6 +4,7 @@ export type ProjectId =
     | "notekeeper-rc"
     | "cook-io-recipe-next"
     | "airbnb-clone-nextjs"
+    | "inktale-blog"
     | "blog-sn-next"
     | "git-finder"
     | "weatherio"
@@ -82,6 +83,15 @@ export const PROJECT_LIST: ProjectEntry[] = [
         repo: "https://github.com/billalben/airbnb-clone-nextjs",
         demo: "https://airbnb.billalbenz.com/",
         builtWith: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL", "Kinde"],
+        badge: true,
+    },
+    {
+        id: "inktale-blog",
+        date: "2024-08",
+        screenshots: [],
+        repo: "https://github.com/billalben/inktale-blog",
+        demo: "https://inktale-blog.onrender.com/",
+        builtWith: ["Node.js", "Express", "TypeScript", "MongoDB", "EJS", "Cloudinary"],
         badge: true,
     },
     {
