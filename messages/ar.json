@@ -98,6 +98,17 @@
                     "إعدادات لصورة الملف الشخصي والاسم والاسم المستخدم والبريد والنبذة وكلمة المرور وحذف الحساب، مع تحديد معدّل حسب IP وضغط gzip/brotli."
                 ]
             },
+            "expense-tracker-gql": {
+                "name": "Expense Tracker (GraphQL)",
+                "tagline": "متتبّع مصروفات متكامل مع واجهة GraphQL وعميل React، منظّم كمساحة عمل pnpm.",
+                "highlights": [
+                    "واجهة GraphQL مبنية بـ Express و Apollo Server 4 و Mongoose ومصادقة Passport المحلية.",
+                    "عميل React 19 مدعوم بـ Vite 7 و Apollo Client 4 و React Router 7 و Tailwind CSS v4.",
+                    "منظّم كـ monorepo على pnpm بتطبيقَي خادم وعميل منفصلين يشتركان في مساحة عمل واحدة.",
+                    "نشر إنتاجي على خدمة واحدة: تُقدَّم الـ API والعميل المبني معًا مع رجوع SPA.",
+                    "المستخدمون والعمليات مخزّنون في MongoDB، ويتصل العميل عبر /graphql في التطوير والإنتاج."
+                ]
+            },
             "blog-sn-next": {
                 "name": "Blog — Next.js + Sanity",
                 "tagline": "مدونة تُعرض من الخادم مدعومة بـ Next.js و Sanity CMS، مع صفحات ثابتة سريعة واستوديو محتوى داخل المستودع.",

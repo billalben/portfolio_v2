@@ -98,6 +98,17 @@
                     "Paramètres pour la photo de profil, le nom, le pseudo, l'e-mail, la bio, le mot de passe et la suppression du compte, avec limitation de débit par IP et compression gzip/brotli."
                 ]
             },
+            "expense-tracker-gql": {
+                "name": "Expense Tracker (GraphQL)",
+                "tagline": "Un suivi de dépenses full-stack avec une API GraphQL et un client React, organisé en workspace pnpm.",
+                "highlights": [
+                    "API GraphQL construite avec Express, Apollo Server 4, Mongoose et l'authentification locale Passport.",
+                    "Client React 19 propulsé par Vite 7, Apollo Client 4, React Router 7 et Tailwind CSS v4.",
+                    "Organisé en monorepo pnpm avec des applications serveur et client distinctes partageant un même workspace.",
+                    "Déploiement de production sur un seul serveur : l'API et le client compilé sont servis depuis un même service, avec repli SPA.",
+                    "Utilisateurs et transactions stockés dans MongoDB, le client passant par /graphql en développement comme en production."
+                ]
+            },
             "blog-sn-next": {
                 "name": "Blog — Next.js + Sanity",
                 "tagline": "Un blog rendu côté serveur propulsé par Next.js et Sanity CMS, avec des pages statiques rapides et un studio de contenu intégré au dépôt.",

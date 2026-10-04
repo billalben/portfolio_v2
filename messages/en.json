@@ -97,6 +97,17 @@
                     "Settings for profile photo, name, username, email, bio, password, and account deletion, with per-IP rate limiting and gzip/brotli compression."
                 ]
             },
+            "expense-tracker-gql": {
+                "name": "Expense Tracker (GraphQL)",
+                "tagline": "A full-stack expense tracker with a GraphQL API and a React client, organized as a pnpm workspace.",
+                "highlights": [
+                    "GraphQL API built with Express, Apollo Server 4, Mongoose, and Passport local authentication.",
+                    "React 19 client powered by Vite 7, Apollo Client 4, React Router 7, and Tailwind CSS v4.",
+                    "Organized as a pnpm monorepo with separate server and client apps sharing one workspace.",
+                    "Single-server production deploy: the API and the built client are served from one service, with an SPA fallback.",
+                    "MongoDB-backed users and transactions, with the client proxying /graphql in both dev and production."
+                ]
+            },
             "blog-sn-next": {
                 "name": "Blog — Next.js + Sanity",
                 "tagline": "A server-rendered blog powered by Next.js and Sanity CMS, with fast static pages and an in-repo content studio.",

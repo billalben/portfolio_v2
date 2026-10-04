@@ -5,6 +5,7 @@ export type ProjectId =
     | "cook-io-recipe-next"
     | "airbnb-clone-nextjs"
     | "inktale-blog"
+    | "expense-tracker-gql"
     | "blog-sn-next"
     | "git-finder"
     | "weatherio"
@@ -92,6 +93,15 @@ export const PROJECT_LIST: ProjectEntry[] = [
         repo: "https://github.com/billalben/inktale-blog",
         demo: "https://inktale-blog.onrender.com/",
         builtWith: ["Node.js", "Express", "TypeScript", "MongoDB", "EJS", "Cloudinary"],
+        badge: true,
+    },
+    {
+        id: "expense-tracker-gql",
+        date: "2024-09",
+        screenshots: [],
+        repo: "https://github.com/billalben/expense-tracker-gql",
+        demo: "https://expense-tracker-gql-goa1.onrender.com",
+        builtWith: ["React", "TypeScript", "GraphQL", "Apollo Server", "Node.js", "MongoDB", "Tailwind CSS"],
         badge: true,
     },
     {
