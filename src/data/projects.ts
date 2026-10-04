@@ -1,6 +1,9 @@
 export type ProjectId =
     | "knowsphere"
     | "teamora"
+    | "notekeeper-rc"
+    | "cook-io-recipe-next"
+    | "airbnb-clone-nextjs"
     | "blog-sn-next"
     | "git-finder"
     | "weatherio"
@@ -52,6 +55,33 @@ export const PROJECT_LIST: ProjectEntry[] = [
         repo: "https://github.com/billalben/teamora",
         demo: "https://teamora.billalbenz.com",
         builtWith: ["React", "TypeScript", "Node.js", "WebSockets", "PostgreSQL"],
+        badge: true,
+    },
+    {
+        id: "notekeeper-rc",
+        date: "2026-08",
+        screenshots: [],
+        repo: "https://github.com/billalben/notekeeper-rc",
+        demo: "https://notekeeper-rc.vercel.app/",
+        builtWith: ["React", "TypeScript", "Vite", "Zustand", "PWA"],
+        badge: true,
+    },
+    {
+        id: "cook-io-recipe-next",
+        date: "2026-07",
+        screenshots: [],
+        repo: "https://github.com/billalben/cook.io-recipe-next",
+        demo: "https://cook.billalbenz.com/",
+        builtWith: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Zod", "Edamam API"],
+        badge: true,
+    },
+    {
+        id: "airbnb-clone-nextjs",
+        date: "2024-08",
+        screenshots: [],
+        repo: "https://github.com/billalben/airbnb-clone-nextjs",
+        demo: "https://airbnb.billalbenz.com/",
+        builtWith: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL", "Kinde"],
         badge: true,
     },
     {

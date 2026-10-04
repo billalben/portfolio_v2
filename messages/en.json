@@ -53,6 +53,39 @@
                     "Secure authentication, workspace-level access control, tiered rate limiting, and soft-delete with undo."
                 ]
             },
+            "notekeeper-rc": {
+                "name": "Notekeeper",
+                "tagline": "An offline-first, installable PWA for taking notes across notebooks — with Markdown editing, tags, trash, and full theming.",
+                "highlights": [
+                    "Organize notes into notebooks with pinning, reordering, tags, favorites, and a restore-capable trash with auto-purge.",
+                    "Write in a GitHub-flavored Markdown editor with live preview, syntax highlighting, autosave, and modal, full-screen, or split-pane layouts.",
+                    "Fuzzy full-text search palette, per-notebook and tag statistics, and JSON or Markdown export.",
+                    "Installable PWA with an offline app shell, light/dark themes, English/French/Arabic with RTL, and customizable keyboard shortcuts.",
+                    "Local-first by design: all data lives in localStorage via Zustand with versioned migrations from the original vanilla JS version."
+                ]
+            },
+            "cook-io-recipe-next": {
+                "name": "Cook.io",
+                "tagline": "A server-rendered recipe discovery app with faceted search, infinite scrolling, and saved recipes — powered by the Edamam API.",
+                "highlights": [
+                    "Search and browse thousands of recipes with faceted filters for meal type, cuisine, diet, health, cooking time, calories, and ingredient count — all reflected in the URL.",
+                    "Edamam credentials stay server-side: every request is proxied through Next.js Route Handlers, with pagination links rewritten to strip the keys.",
+                    "Infinite scroll via IntersectionObserver with request de-duplication and inline retry, plus meal-type tabs and drag/swipe cuisine carousels.",
+                    "Server-rendered recipe detail pages with ingredients, nutrition, tag links, and per-recipe OpenGraph metadata.",
+                    "End-to-end Zod validation and two-layer caching, with zero-dependency carousel, accordion, and snackbar primitives."
+                ]
+            },
+            "airbnb-clone-nextjs": {
+                "name": "Airbnb Clone",
+                "tagline": "A full-featured Airbnb clone to browse, book, and list rental homes — complete with an admin dashboard.",
+                "highlights": [
+                    "Browse and filter listings by category, country, and guests/rooms/bathrooms, with detail pages, photo carousels, maps, and a live booking calendar.",
+                    "A guided 4-step hosting wizard to publish listings with photos, pricing, and location, plus favorites and reservation management.",
+                    "Authentication via Kinde, PostgreSQL with Prisma, and Supabase Storage for listing photos.",
+                    "Protected admin dashboard with stat cards and tables to manage users, homes, and reservations.",
+                    "Interactive OpenStreetMap previews, dark mode, and toast notifications after key actions."
+                ]
+            },
             "blog-sn-next": {
                 "name": "Blog — Next.js + Sanity",
                 "tagline": "A server-rendered blog powered by Next.js and Sanity CMS, with fast static pages and an in-repo content studio.",
