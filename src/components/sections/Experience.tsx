@@ -21,7 +21,7 @@ const Experience = () => {
             <SectionTitle id="experience">{tHeader("sections.experience")}</SectionTitle>
 
             <div className="my-auto flex w-full flex-col gap-8">
-                <ul className="group/list flex flex-col gap-8">
+                <ul className="flex flex-col gap-8">
                     {EXPERIENCES.map((id) => (
                         <li key={id}>
                             <ExperienceCard

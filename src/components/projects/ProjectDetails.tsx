@@ -40,6 +40,26 @@ const ProjectDetails = ({ project }: ProjectDetailsProps) => {
                 </ul>
             )}
 
+            {project.screenshots && project.screenshots.length > 0 && (
+                <div className="flex flex-col gap-2">
+                    <h3 className="text-sm font-semibold text-slate-900 dark:text-slate-100">{t("screenshots")}</h3>
+                    <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+                        {project.screenshots.map((screenshot, index) => (
+                            <Image
+                                key={screenshot}
+                                src={screenshot}
+                                alt={`${t(`items.${project.id}.name`)} — ${index + 1}`}
+                                width={480}
+                                height={300}
+                                sizes="(max-width: 640px) 100vw, 240px"
+                                unoptimized={screenshot.endsWith(".svg")}
+                                className="h-auto w-full rounded-xl border border-slate-200 object-cover dark:border-slate-700"
+                            />
+                        ))}
+                    </div>
+                </div>
+            )}
+
             {(project.repo || project.demo) && (
                 <div className="flex flex-wrap gap-3">
                     {project.repo && (
@@ -59,30 +79,12 @@ const ProjectDetails = ({ project }: ProjectDetailsProps) => {
                             href={project.demo}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-1.5 rounded-md bg-accent-blue px-3 py-1.5 text-sm font-medium text-slate-900 transition-colors hover:bg-accent-blue/85 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-blue"
+                            className="inline-flex items-center gap-1.5 rounded-md bg-accent-blue px-3 py-1.5 text-sm font-medium text-white transition-colors hover:bg-accent-blue/85 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-blue"
                         >
                             <IconExternalLink className="size-4" aria-hidden="true" />
                             {t("demo")}
                         </a>
                     )}
-                </div>
-            )}
-
-            {project.screenshots && project.screenshots.length > 0 && (
-                <div className="flex flex-col gap-2">
-                    <h3 className="text-sm font-semibold text-slate-900 dark:text-slate-100">{t("screenshots")}</h3>
-                    <div className="grid grid-cols-2 gap-2">
-                        {project.screenshots.map((screenshot, index) => (
-                            <Image
-                                key={screenshot}
-                                src={screenshot}
-                                alt={`${t(`items.${project.id}.name`)} — ${index + 1}`}
-                                width={480}
-                                height={300}
-                                className="h-auto w-full rounded border border-slate-200 object-cover dark:border-slate-700"
-                            />
-                        ))}
-                    </div>
                 </div>
             )}
         </div>

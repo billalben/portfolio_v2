@@ -10,6 +10,7 @@ import { ProjectEntry } from "@/data/projects";
 
 import Modal from "../Modal";
 import ProjectDetails from "../projects/ProjectDetails";
+import ProjectPlaceholder from "../projects/ProjectPlaceholder";
 import CardShell from "./CardShell";
 
 type ProjectCardProps = {
@@ -29,13 +30,17 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
                 onClick={() => setOpen(true)}
                 actionLabel={title}
                 media={
-                    <Image
-                        src={project.image}
-                        width={120}
-                        height={80}
-                        alt={title || "Project Image"}
-                        className="w-30 h-20 object-cover rounded border-2 border-slate-200/20 transition group-hover:border-slate-300/40 dark:border-slate-700/30 dark:group-hover:border-slate-600/50 opacity-100 pointer-events-none"
-                    />
+                    project.image ? (
+                        <Image
+                            src={project.image}
+                            width={120}
+                            height={80}
+                            alt={title || "Project Image"}
+                            className="w-30 h-20 object-cover rounded-xl border-2 border-slate-200/20 transition group-hover:border-slate-300/40 dark:border-slate-700/30 dark:group-hover:border-slate-600/50 opacity-100 pointer-events-none"
+                        />
+                    ) : (
+                        <ProjectPlaceholder className="w-30 h-20" />
+                    )
                 }
             >
                 <div>
